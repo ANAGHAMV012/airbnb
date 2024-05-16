@@ -1,0 +1,57 @@
+:root{
+--primary:yellow;
+--secondary:rgb(21, 18, 214);
+}
+
+
+
+li{
+list-style-type: none;
+}
+
+body,p,a,ul,li{
+margin: 0;
+padding:0;
+text-decoration: none;
+}
+body{
+    background: var(--secondary);
+    overflow-x: hidden;
+}
+.button{
+
+background: none;
+border: 2px solid var(--primary);
+color: var(--primary);
+padding: 8px 12x;
+border-radius: 25px;
+text-transform: uppercase;
+box-shadow: 1px 3px 3px rgba(black, green, blue, alpha,0.3);
+
+}
+
+.leading{
+    background-color: rgb(97, 71, 245);
+}
+
+
+
+  
+@media and (min width:620px){
+
+
+}
+@media screen and (min width:960px) {
+    
+
+
+}
+
+
+@media screen and (min width:1200px) {
+    
+}
+
+
+
+

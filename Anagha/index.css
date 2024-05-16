@@ -1,0 +1,21 @@
+p.hello{
+    color: rgb(255, 0, 140)
+}
+p.hi{
+    color: blue
+}
+h1{
+   color: yellow;
+}
+div.intro{
+    color: yellowgreen;
+}
+p.happy{
+    color: brown;
+}
+h5{
+    
+}
+body{
+    background-color: rgb(83, 148, 173);
+}

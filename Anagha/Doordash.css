@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    width:100%;
+    height: 67.25vh;
+    position: relative;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(images/desktop.webp);
+}
+.header-image{
+    position: absolute;
+    top: 0vh;
+    z-index: -1;
+    height: 550px;
+    padding: 0px 8px;
+}
+.nav{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    color: white;
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav-bar{
+    display: flex;
+}
+.nav-bar li{
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    padding-left: 2px;
+    list-style: none;
+}
+.head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 31vh;
+    align-items: center;
+    color: white;
+    font-size: 30;
+}
+.head h2{
+    font-size: 50px;
+}
+.logo{
+    width: 100px;
+    font-size: 1px;
+    font-weight: lighter;
+    height:1px;    
+    padding-top: 20px;
+}
+.logo img{
+    width:220px;
+}
+.button{
+    padding: 37px;
+}
+.search button img{
+    width: 30px;
+    position: absolute;
+    right: 10px;
+    top: -18px;
+}
+.sign-in{
+    color: white;
+    background-color: red;
+    border-radius: 25px;
+    padding: 13px;
+    margin-right: 1;
+    border: none;
+}
+.sign-up{
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    padding: 13px;
+    border: none;
+}
+.search{
+    position: relative;
+    width: 400px;
+    height: 50px;
+    background-color: white;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    cursor: pointer;
+}
+.search > i{
+    font-size: 20px;
+}
+.search > input{
+    flex: 1;
+    height: 24;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    margin: 20px;
+}
+.search img{
+    width: 25;
+}
+.search .red-arrow img{
+    width: 20px;
+    position: relative;
+    margin:10px;
+}
+.sign{
+    border-radius: 25px;
+    width: 255px;
+    height: 28px;
+}
+.Sign .user{
+    position: absolute;
+    color: black;
+    top: 545px;
+    right: 1015px;
+}
+.first{
+    padding:125px 450px;
+    display: flex;
+    gap: 123px;
+    overflow: hidden;
+}
+.first h4{
+    font-size: 32px;
+    
+}
+.first p{
+    font-size: 18px;
+}
+.item{
+    width: 300px;
+}
+.item h3{
+    color: red;
+}
+.second{
+    display:flex;
+    padding-left: 400px;
+    gap: 123px;
+    overflow: hidden;
+}
+.second .side{
+    width: 300px;
+}
+.second h2{
+    font-size: 45px;
+}
+.second h6{
+    font-size: 18px;
+}
+.second img{
+    float: right;
+}
+.third{
+    padding: 50px;
+}
+.third .dashpass{
+    float: right;
+}
+.third h4{
+    font-size: 45px;
+    
+}
+.Grocery{
+    background-image: url(images/grocery_desktop\ \(1\).avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    text-align: center;
+}
+.Grocery img{
+    width: 100%;
+    length: 100%;
+}
+.second button{
+    border-radius: 25px;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+}
+.third button{
+    border-radius: 25px;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+}
+.Grocery h2{
+    font-size: 45px;
+}
+.Grocery h4{
+    font-size: 18px;
+}
+.Grocery button{
+    border-radius: 25px;
+    padding: 10px;
+    background-color: red;
+    border: none;
+}
+.footer{
+    background-color: black;
+    color: white;
+}
+.footer ul li{
+    display: flex;
+}
