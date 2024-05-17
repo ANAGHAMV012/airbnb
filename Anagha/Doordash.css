@@ -220,3 +220,46 @@ header{
 .footer ul li{
     display: flex;
 }
+section .third img{
+    font-size: 2px;
+    width:20px;
+}
+.gifting img{
+    font-size: 2px;
+    width: 500px;
+}
+.gifting{
+    font-size: 20px;
+}
+.third img{
+    border-bottom: box-shadow rgb(0, 0, 0, .5);
+    height: fit-content;
+    width: 2000000000px;
+    font-size: 20000000000px;
+}
+.third{
+    font-size: 10px;
+    width: 10px;
+}
+.third h4{
+    margin-left: 200000000px;
+    text-wrap: nowrap;
+    margin-top: 50px;
+}
+.third-image{
+    font-size: 20px;
+    width: 20000000000000px;
+    height: 20px;
+}
+.gifting h2{
+    text-align:center;
+    align-items: center;
+}
+.gifting{
+    display: flex;
+    margin-left: 2px;
+}
+.delivery img{
+    font-size: larger;
+    width:fit-content;
+}

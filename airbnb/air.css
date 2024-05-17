@@ -245,6 +245,7 @@ footer{
     padding: 50px;
     font-size: 15px;
     margin-left: 40px;
+    border-bottom:1px solid rgb(202, 214, 214);
 }
 .links h3{
     font-size: 20px;
@@ -268,25 +269,26 @@ li{
     color: rgb(114, 111, 111);
 }
 .row2{
-    margin-top: -739px;
+    margin-top: -1007px;
     margin-left: 200px;
 }
 .row3{
-    margin-top: -695px;
+    margin-top: -1007px;
     margin-left: 400px;
 }
 .row4{
-    margin-top: -698px;
+    margin-top: -1007px;
     margin-left: 600px;
 }
 .row5{
-    margin-top: -698px;
+    margin-top: -1007px;
     margin-left: 800px;
 }
 .row6{
-    margin-top: -650px;
+    margin-top: -943px;
     margin-left: 1000px;
 }
 .footer-main{
     margin-top: 20px;
 }
+.
