@@ -4,19 +4,265 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-body{
-}
-.header{
-    background-color: blue;
+header{
+    width: 100%;
     background-image: url(images/o.jpg); 
+    background-size: 100%;
+    position: relative;
+    height: 70.6vh;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .header img{
-    font-size: 2px;
-    margin-top: 565px;
+    position: absolute;
+    top: 0vh;
+    height: 400px;
 }
 .nav{
+    height: 130px;
+    padding: 24px 40px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 275px;
+    height: 0px;
+}
+.logo img{
+    width: 5%;
+    height: 34px;
+    font-size: 14px;
+    background-size: cover;
+    align-items: center;
+    font-size: 14px;
+}
+.nav-mid{
+    width: 939.06px;
+    height: 48px;
+    margin: 0px -16px;
+    text-align: center;
+}
+.nav-mid input{
+    width: 425.53px;
+    height: 48px;
+    padding: 13px 16px;
+}
+.nav-mid button{
+    width: 56px;
+    height: 48px;
+    background-color: #E00707;
+    padding: 10px 16px;
+}
+.sign{
     display: flex;
 }
-.login{
-    width: 20px;
+.sign select{
+    width: 151.36px;
+    height: 36px;
+    padding: 8px;
+}
+.review{
+    width: 116.06px;
+    height: 36px;
+    padding: 8px;
+}
+.review h6{
+    height: 20px;
+    font-size: 14px;
+}
+.login button{
+    width: 81.73px;
+    height: 44px;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border-color: #FFFFFF;
+}
+.signup button{
+    width: 91.78px;
+    height: 44px;
+    background-color: #E00707;
+    padding: 10px 16px;
+    color: #FFFFFF;
+}
+.content{
+    height: 552px;
+    padding: 0px 40px;
+    margin: 0px 305.5px;
+}
+.content1{
+    weight: 480px;
+    height: 288px;
+}
+.content1 h1{
+    width: 480px;
+    height: 112px;
+    color: #FFFFFF;
+    font-size: 48px;
+}
+.content1 button{
+    width: 197.39px;
+    height: 48px;
+    background-color: #E00707;
+    padding: 12px 32px;
+}
+.content1 button i{
+    width: 24px;
+    height: 24px;
+}
+.content1 button span{
+    width: 101.39px;
+    height: 23px;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin: 1px 0px 0px;
+}
+.content2{
+    width: 206.59px;
+    height: 40px;
+    color: #FFFFFF;
+    font-size: 48px;
+}
+.content2 a{
+    width: 209.59px;
+    height: 19px;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+section{
+    width: 1835px;
+    height: 2066.98px;
+}
+.section{
+    width: 1224px;
+    height: 2065.98px;
+    margin: 0px 305.5px;
+    padding: 0px 40px;
+}
+.section-sub{
+    width: 1144px;
+    height: 2065.98px;
+    padding: 56px 0px;
+}
+.sub-sub{
+    width: 1144px;
+    height: 1789.31px;
+}
+.section-sub h2{
+    width: 1144px;
+    height: 52px;
+    color: #2D2E2F;
+    font-size: 28px;
+    padding: 0px 0px 16px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900.5;
+}
+/* .row1{
+    height: 429.33px;
+    display: flex;
+    justify-content: space-between;
+} */
+.col1{
+    width: 365.33px;
+    height: 429.33px;
+    border: 1px solid #e7ebee;
+}
+.col1-sub{
+    width:331.33px;
+    height: 56px;
+    padding: 16px 0px 0px;
+    display: flex;
+}
+.col1A{
+    height: 363.33px;
+    height: 73px;
+    padding: 16px 16px 0px;
+    display: flex;
+}
+.col1A1{
+    width: 40px;
+    height: 40px;
+}
+.col1A1 img{
+    width: 40px;
+    height: 40px;
+    border-radius: 200px;
+}
+.col1A2{
+    margin-left: 8px;
+    width: 283.33px;
+    height: 40px;
+}
+.col1A2 #A{
+    width: 283.33px;
+    height: 20px;
+    color: #2D2E2F;
+    font-size: 14px;
+}
+.col1A2 #B{
+    width: 283.33px;
+    height: 16px;
+    color: #6E7072;
+    font-size: 12px;
+}
+.col1B{
+    width: 363.33px;
+    height: 150px;
+    padding: 16px 0px 0px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+.col1B img{
+    background-size: cover;
+    background-position: center;
+    width:400px;
+}
+.col1C{
+    width: 363.33px;
+    height: 145.33px;
+    padding: 16px;
+}
+.col1C p{
+    width: 331.33px;
+    height: 24px;
+    color: #2D2E2F;
+    font-size: 16px;
+}
+.rating{
+    width: 331.33px;
+    height: 29.33px;
+    padding: 4px 0px 8px;
+}
+.rating i{
+    width: 16px;
+    height: 16px;
+    margin: 0px 2px 0px 0px;
+    background-color: red;
+    color: white;
+    font-size: xx-small;
+
+}
+.stars{
+    width: 88px;
+    height: 16px;
+    text-wrap: nowrap;
+    align-items: center;
+    text-align: center;
+}
+.about{
+    width: 331.33px;
+    height: 40px;
+    color: #2D2E2F;
+    font-size: 14px;
+}
+.col1D{
+    width: 363.33px;
+    height: 59px;
+    padding: 0px 16px;
+}
+.col1D-sub{
+    width: 331.33px;
+    height: 42px;
 }
