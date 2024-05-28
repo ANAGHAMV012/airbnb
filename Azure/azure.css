@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.header{
+    display: flex;
+    padding-left: 200px;
+    border-bottom: 1px solid ;
+    height: 56px;
+    justify-content: space-between;
+}
+.header2{
+    display: flex;
+}
+.header .header1{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin-left: -86px;
+}
+.header1 img{
+    width: 38.1px;
+    height: 35px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-top: 6px;
+}
+.logo-text{
+    padding-left: 16px;
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: -5px;
+}
+.header1 .icons ul{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+.icons{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 0px;
+}
+.icons ul li{
+    margin-left: -27px;
+    width: 50px;
+}
+.header2{
+    display: flex;
+}
+.header2 button{
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 35px;
+    gap: 20px;
+    font-size: 13px;
+    margin-top: 10px;
+}
+.header2 button h6{
+    margin-left: 20px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.header2 ul{
+    display: flex;
+    list-style: none;
+}
+section{
+    background-image: url(images/hp-hero_vp4-4x.avif);
+}
+section img{
+}
