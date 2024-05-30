@@ -172,7 +172,6 @@ body{
     align-items: center;
     justify-content: space-between;
 }
-
 .main-section .top-nav button{
     background: transparent;
     border:0;
@@ -183,14 +182,12 @@ body{
     font-size: 22px;
     margin-right: 10px;
 }
-
 .top-nav .login-btn .sign-up{
     color: #838181;
     font-size: 16px;
     font-weight: 600;
     margin-right: 15px;
-    border-radius: 25px;
-    
+    border-radius: 25px;  
 }
 .top-nav .login-btn .sign-up:hover{
     color: #ffffff;
@@ -203,14 +200,12 @@ body{
     background:#fff;
     padding: 10px 15px;
     border-radius: 20px;
-
 }
 .top-nav .login-btn .Login:hover{
     background: #f3f3f3;
 
 
 }
-
 .spotify-playlist{
     padding: 20px 40px;
 }
@@ -225,7 +220,6 @@ body{
     overflow:hidden;
 
 }
-
 .spotify-playlist .card .item{
     width: 190px;
     min-width: 140px;
@@ -267,16 +261,13 @@ body{
     opacity:0;
     transform:0.3s ease all;
 }
-
 .spotify-playlist .card .item:hover .play-btn i{
     opacity: 1;
     transform:translateY(-20px);
 }
-
 .footer-section{
     padding: 20px 40px;
 }
-
 .footer-section .footer{
     display: flex;
     justify-content: space-between;
@@ -311,8 +302,6 @@ body{
     color: #fff;
 
 }
-
-
 .footer .social-links i{
     color: #fff;
     background: #353434;
@@ -326,7 +315,6 @@ body{
     background: #636262;
 
 }
-
 hr{
     margin: 20px 40px;
     border: 0;
@@ -334,7 +322,6 @@ hr{
     border: 1px solid #575656;
     margin-top: 40px;
 }
-
 .copyright{
     padding: 0 40px;
     color: #969393;
@@ -351,7 +338,6 @@ hr{
     right: 0;
     padding: 15px 40px;
 }
-
 .preview h4{
     font-size: 13px;
     font-weight: 600;
@@ -363,7 +349,6 @@ hr{
     font-weight: 400;
     color: #fff;
 }
-
 .preview button{
     padding: 12px 30px;
     border: 0;
