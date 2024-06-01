@@ -3,12 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 .side {
     top: 0;
     left: 0;
@@ -22,7 +20,6 @@ body {
     border-radius: 10px;
     position: fixed;
 }
-
 .sidebar-nav {
     width: 420px;
     height: 156px;
@@ -30,25 +27,21 @@ body {
     background-color: #131212;
     border-radius: 8px;
 }
-
 .logo {
     width: 160px;
     margin: 20px 0px 0px;
     padding: 0px 24px;
 }
-
 .logo img {
     width: 100%;
     margin-left: -15px;
 }
-
 .sidebar-nav ul {
     width: 420px;
     height: 112px;
     padding: 8px 12px;
     list-style: none;
 }
-
 .sidebar-nav ul li .home {
     list-style: none;
     text-decoration: none;
@@ -59,7 +52,6 @@ body {
     height: 48px;
     padding: 4px 12px;
 }
-
 .sidebar-nav ul li .find {
     list-style: none;
     text-decoration: none;
@@ -70,28 +62,23 @@ body {
     height: 48px;
     padding: 4px 12px;
 }
-
 .home {
     width: 396px;
     height: 48px;
     padding: 4px 12px;
 }
-
 .home a {
     width: 372px;
     height: 40px;
 }
-
 .home a i {
     width: 24px;
     height: 24px;
     color: #FFFFFF;
 }
-
 .home a {
     text-decoration: none;
 }
-
 .home a span {
     width: 44.45px;
     height: 22px;
@@ -99,22 +86,21 @@ body {
     font-size: 16px;
     font-weight: bold;
 }
-
 .search {
     width: 396px;
     height: 48px;
     padding: 4px 12px;
 }
-.search a span i{
+.search a span i {
     transition: color 0.2s ease;
 }
-.search a span i:hover{
+.search a span i:hover {
     color: #FFFFFF;
 }
-.search a span{
+.search a span {
     transition: color 0.2s ease;
 }
-.search a span:hover{
+.search a span:hover {
     color: #FFFFFF;
 }
 .search a {
@@ -192,18 +178,23 @@ body {
     height: 22px;
     font-weight: bold;
 }
-.lib-sub button i{
+
+.lib-sub button i {
     transition: color 0.2s ease;
 }
-.lib-sub button i:hover{
+
+.lib-sub button i:hover {
     color: #FFFFFF;
 }
-.lib-sub button span{
+
+.lib-sub button span {
     transition: color 0.2s ease;
 }
-.lib-sub button span:hover{
+
+.lib-sub button span:hover {
     color: #FFFFFF;
 }
+
 .plus {
     width: 32px;
     height: 32px;
@@ -259,10 +250,12 @@ body {
     font-weight: bold;
     text-wrap: nowrap;
 }
-.btn button:hover{
-    transform:scale(1.05);
+
+.btn button:hover {
+    transform: scale(1.05);
     background-color: #faf7f7;
 }
+
 .browse {
     width: 404px;
     height: 134px;
@@ -316,10 +309,12 @@ body {
     width: 142.95px;
     height: 32px;
 }
-.bt button:hover{
+
+.bt button:hover {
     transform: scale(1.05);
     background-color: #faf7f7;
 }
+
 .bt button span {
     width: 142.95px;
     height: 32px;
@@ -493,10 +488,12 @@ body {
     border: none;
     font-weight: bold;
 }
-.yo:hover{
+
+.yo:hover {
     color: #FFFFFF;
     transform: scale(1.05);
 }
+
 .zo {
     width: 109.38px;
     height: 48px;
@@ -509,19 +506,23 @@ body {
     font-weight: bold;
     border: none;
 }
-.zo:hover{
+
+.zo:hover {
     transform: scale(1.05);
     background-color: #FFFFFF;
 }
+
 .main-bar {
     width: 1406px;
     height: 876px;
 }
-.remain{
+
+.remain {
     height: 3076.41px;
     width: 1406px;
     padding: 0px 0px 32px;
 }
+
 .section {
     width: 1406px;
     height: 2651.41px;
@@ -566,9 +567,11 @@ body {
     width: 1295.55px;
     height: 35px;
 }
-.heading-left h2 a:hover{
+
+.heading-left h2 a:hover {
     text-decoration: underline;
 }
+
 .heading-left h2 a {
     width: 145.23px;
     height: 29px;
@@ -590,9 +593,11 @@ body {
     color: #B3B3B3;
     font-size: 14px;
 }
-.heading-right span:hover{
+
+.heading-right span:hover {
     text-decoration: underline;
 }
+
 .content {
     width: 1382px;
     height: 284.42px;
@@ -630,7 +635,7 @@ body {
     height: 46px;
     display: flex;
     flex-direction: column;
-    margin-top: 11px;
+    margin-top: -11px;
 }
 
 .abt a {
@@ -648,6 +653,7 @@ body {
     height: 20px;
     text-wrap: nowrap;
     color: #B3B3B3;
+    margin-top: 11px;
 }
 
 .main-view-container {
@@ -703,10 +709,12 @@ body {
     width: 238px;
     height: 22px;
 }
-.col-links li a:hover{
+
+.col-links li a:hover {
     text-decoration: underline;
-    color:#FFFFFF;
+    color: #FFFFFF;
 }
+
 .col-links li .z1 {
     width: 44.66px;
     height: 22px;
@@ -781,6 +789,7 @@ body {
     width: 86.78px;
     height: 22px;
 }
+
 .main-view-container {
     width: 1406px;
     height: 393px;
@@ -971,21 +980,25 @@ body {
     display: flex;
     justify-content: space-between;
 }
-.right button{
+
+.right button {
     width: 40px;
     height: 40px;
     background-color: #292929;
     border-radius: 200px;
     border: none;
 }
-.right button:hover{
+
+.right button:hover {
     background-color: #757474;
 }
-.right i{
+
+.right i {
     width: 16px;
     height: 16px;
     color: #FFFFFF;
 }
+
 .view-bottom {
     width: 1342px;
     height: 36px;
@@ -1015,17 +1028,20 @@ body {
     right: 0;
     padding: 11px 24px 7px 15px;
 }
+
 .preview h4 {
     font-size: 13px;
     font-weight: 600;
     margin-bottom: 10px;
     color: #fff;
 }
+
 .preview p {
     font-size: 16px;
     font-weight: 400;
     color: #fff;
 }
+
 .preview button {
     padding: 12px 30px;
     border: 0;
@@ -1033,51 +1049,69 @@ body {
     border-radius: 20px;
     font-weight: bolder;
 }
-.preview button:hover{
+
+.preview button:hover {
     transform: scale(1.05);
 }
+
 .privacy ul li span {
     color: #A7A7A7;
     font-size: 11px;
     font-weight: 600;
 }
+
 .privacy ul li a {
     margin: 0px 16px 0px 0px;
     text-decoration: none;
 }
+
 .privacy ul li .cookies:hover {
     text-decoration: underline;
     color: #bebcbc;
 }
-.bot-dwn-bot button:hover{
+
+.bot-dwn-bot button:hover {
     transform: scale(1.05);
     border-color: #FFFFFF;
 }
+
 .privacy ul {
     list-style: none;
     margin-top: 10px;
 }
+
 .privacy ul li {
     padding-bottom: 8px;
 }
-.play-btn{
+
+.play-btn {
     position: relative;
+    visibility: hidden;
 }
-.play-btn i{
-    position:absolute;
+.play-btn button i {
+    position: absolute;
     background: #1db954;
     border-radius: 50%;
-    padding: 10px;
-    right: 10px;
-    top: -60px;
-    opacity:0;
-    transform:0.3s ease all;
+    padding: 15px;
+    right: 32px;
+    top: -40px;
+    opacity: 0;
+    transform: 0.3s ease all;
+    font-size: 23px;
+    color: black;
+    width: 52px;
+    height: 52px;
 }
-.card1:hover .play-btn i{
+.content .card1 .card1-sub:hover .play-btn i {
     opacity: 1;
-    transform:translateY(-20px);
+    transform: translateY(-20px);
+    visibility: visible;
 }
-.hidden-visually{
+
+.content .card1 .card1-sub:hover{
+    background-color: #252525;
+}
+.hidden-visually {
     border: o;
     height: 1px;
     margin: -1px;
