@@ -1,17 +1,19 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     text-transform: capitalize;
 }
-body{
+
+body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2px;
     line-height: 1.43;
     overflow-x: hidden;
 }
-.header{
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,16 +25,19 @@ body{
     top: 0;
     right: 0;
     left: 0;
-    border-bottom:1px solid rgb(202, 214, 214);
+    border-bottom: 1px solid rgb(202, 214, 214);
 }
-.header img{
+
+.header img {
     width: 102px;
 }
-#logo{
+
+#logo {
     width: 2px;
     height: 31px;
 }
-.nav-bar{
+
+.nav-bar {
     font-size: 1.7rem;
     display: flex;
     height: 50px;
@@ -40,71 +45,84 @@ body{
     width: 360px;
     margin-left: 380px;
 }
-.nav-mid{
+
+.nav-mid {
     display: flex;
     text-align: center;
     box-shadow: 0 .5rem .5rem rgb(0, 0, 0, .05);
     border-radius: 25px;
     color: #000;
-    border:1px solid rgb(202, 214, 214);
+    border: 1px solid rgb(202, 214, 214);
 }
-.nav-mid a h4{
+
+.nav-mid a h4 {
     font-size: 15px;
     color: black;
-    font-weight: 20px; 
+    font-weight: 20px;
     margin-top: 10px;
     padding: 1.9px;
 }
-.nav-mid a h3{
+
+.nav-mid a h3 {
     font-size: 15px;
     color: black;
-    font-weight: 20px; 
+    font-weight: 20px;
     margin-top: 10px;
     padding: 1.9px;
 }
-.nav-mid a h4::after{
+
+.nav-mid a h4::after {
     content: "|";
     margin: 0 10px;
     color: gray;
 }
-.nav-mid img{
+
+.nav-mid img {
     width: 13%;
     padding: 5px;
 }
-.icons{
+
+.icons {
     display: flex;
     gap: 2px;
     text-align: center;
     padding: 10px;
 }
-.icons button{
+
+.icons button {
     border-radius: 25px;
     padding: 10px 8px 8px 14px;
     background-color: white;
     box-shadow: 0px 0px 0px 0px rgb(185, 181, 181);
     transition: box-shadow 0.3s ease;
-    border:1px solid rgb(202, 214, 214);
+    border: 1px solid rgb(202, 214, 214);
 }
-.icons button:hover{
+
+.icons button:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-.nav-end-text{
+
+.nav-end-text {
     border-radius: 25px;
     display: flex;
 }
-.nav-end-text:hover{
+
+.nav-end-text:hover {
     background-color: rgb(245, 245, 250);
 }
-.globe-container::before{
+
+.globe-container::before {
     border: 20px;
     border-radius: 25px;
     font-size: 36px;
     transition: transform 0.3s ease;
 }
-.globe-container:hover{
+
+.globe-container:hover {
     background-color: aliceblue;
 }
-.nav-end-text h5{
+
+.nav-end-text h5 {
     font-size: 15px;
     margin-top: 15px;
     margin-right: 2px;
@@ -112,42 +130,50 @@ body{
     font-style: normal;
     padding-right: 20px;
 }
-#user{
+
+#user {
     font-size: 30px;
     width: 45px;
 }
-nav{
+
+nav {
     background-color: white;
 }
-.globe{
+
+.globe {
     font-size: 15px;
     margin-top: 15px;
     margin-right: 18px;
 }
-.icons{
+
+.icons {
     margin-left: 100px;
 }
-section{
-    margin-top:15px;
+
+section {
+    margin-top: 15px;
     align-items: center;
     display: flex;
-    border-bottom:1px solid rgb(202, 214, 214);
+    border-bottom: 1px solid rgb(202, 214, 214);
 }
-#filter{
+
+#filter {
     font-size: 200px;
     color: black;
     width: 200px;
 }
-section{
+
+section {
     box-shadow: 0 .1rem .1rem rgb(0, 0, 0, .05);
     border-bottom: none;
-    top:66px;
+    top: 66px;
     height: 77px;
     position: fixed;
     background-color: white;
 
 }
-.main-section{
+
+.main-section {
     display: flex;
     gap: 50px;
     margin-left: 80px;
@@ -156,28 +182,34 @@ section{
     height: 150px;
 
 }
-.main-section .icon{
+
+.main-section .icon {
     padding-left: 2px;
     width: 47px;
     color: grey;
 }
-.main-section .icon:hover{
+
+.main-section .icon:hover {
     color: #000;
 }
-.main-section .icon img{
+
+.main-section .icon img {
     width: 24px;
     padding-top: 25px;
 }
-.icon p{
-    font-size:13px;
+
+.icon p {
+    font-size: 13px;
     text-wrap: nowrap;
     margin-left: -25px;
     text-align: center;
 }
-.main-section-side .flex{
+
+.main-section-side .flex {
     margin-left: 100px;
 }
-.main-section-side .flex button{
+
+.main-section-side .flex button {
     display: flex;
     width: 80px;
     border-radius: 10px;
@@ -186,14 +218,17 @@ section{
     background-color: white;
     border: 1px solid rgb(218, 208, 208);
 }
-.main-section-side .flex button:hover{
+
+.main-section-side .flex button:hover {
     border-color: black;
     background-color: rgb(244, 248, 252);
 }
-.price-bar{
+
+.price-bar {
     margin-left: 40px;
 }
-.price-bar button{
+
+.price-bar button {
     display: flex;
     border-radius: 10px;
     width: 200px;
@@ -204,60 +239,74 @@ section{
     background-color: white;
     border: 1px solid rgb(202, 194, 194);
 }
-.price-bar button:hover{
+
+.price-bar button:hover {
     background-color: rgb(242, 246, 250);
     border-color: black;
 }
-main{
+
+main {
     display: flex;
     margin-top: 152px;
     margin-left: 10px;
     margin-right: 9px;
 }
-.card img{
+
+.card img {
     width: 335px;
     padding: 14px;
     border-radius: 30px;
     height: 331px;
     padding-top: 21px;
 }
-.card h6,h5,p{
+
+.card h6,
+h5,
+p {
     font-size: 15px;
     margin-left: 20px;
 }
-.card h5{
+
+.card h5 {
     font-weight: 1px;
     color: rgb(134, 126, 126);
 }
-.card p{
+
+.card p {
     font-weight: normal;
 }
-.card{
+
+.card {
     display: flex;
     margin-left: 60px;
 }
-.list h2{
+
+.list h2 {
     font-size: 30px;
     margin: 10px;
     margin-left: 80px;
     margin-top: 50px;
 }
-footer{
+
+footer {
     background-color: rgb(241, 237, 248);
     margin-top: 50px;
 }
-.footer-section{
+
+.footer-section {
     width: 1835px;
     height: 1149px;
     padding: 48px 80px;
     font-size: 15px;
-    border-bottom:1px solid rgb(202, 214, 214);
+    border-bottom: 1px solid rgb(202, 214, 214);
 }
-.foo{
+
+.foo {
     width: 1675px;
     height: 1053px;
 }
-.links ul{
+
+.links ul {
     list-style: none;
     display: flex;
     width: 1675px;
@@ -265,7 +314,8 @@ footer{
     border-bottom: 2px solid rgb(0, 0, 0, .05);
 
 }
-.z1{
+
+.z1 {
     width: 70.27px;
     height: 38px;
     color: #222222;
@@ -273,7 +323,8 @@ footer{
     margin: 6px 6px 6px -10px;
     padding: 10px;
 }
-.z2{
+
+.z2 {
     width: 111.27px;
     height: 38px;
     color: #6A6A6A;
@@ -281,7 +332,8 @@ footer{
     margin: 6px 6px 6px 0px;
     padding: 10px;
 }
-.z3{
+
+.z3 {
     width: 83.63px;
     height: 38px;
     color: #6A6A6A;
@@ -289,14 +341,16 @@ footer{
     margin: 6px 6px 6px 0px;
     padding: 10px;
 }
-.z4{
+
+.z4 {
     width: 88.53px;
     height: 38px;
     color: #6A6A6A;
     margin: 6px 6px 6px 0px;
     padding: 10px;
 }
-.z5{
+
+.z5 {
     width: 60.61px;
     height: 38px;
     color: #6A6A6A;
@@ -304,7 +358,8 @@ footer{
     margin: 6px 6px 6px 0px;
     padding: 10px;
 }
-.z6{
+
+.z6 {
     width: 104.13px;
     height: 38px;
     color: #6A6A6A;
@@ -312,7 +367,8 @@ footer{
     margin: 6px 6px 6px 0px;
     padding: 10px;
 }
-.z7{
+
+.z7 {
     width: 92.92px;
     height: 38px;
     color: #6A6A6A;
@@ -320,7 +376,8 @@ footer{
     margin: 6px 6px 6px 0px;
     padding: 10px;
 }
-.z8{
+
+.z8 {
     width: 101.84px;
     height: 38px;
     color: #6A6A6A;
@@ -329,226 +386,274 @@ footer{
     padding: 10px;
     text-wrap: nowrap;
 }
-.footer-nav h2{
+
+.footer-nav h2 {
     width: 1675px;
     height: 26px;
     color: #222222;
     font-size: 22px;
     margin: 0px 0px 8px;
 }
-.footer-first{
+
+.footer-first {
     width: 1675px;
     height: 968px;
     padding: 32px 0px 0px;
 }
-.footer-first-sub{
+
+.footer-first-sub {
     width: 1675px;
     height: 936px;
 }
-.footer-first p{
+
+.footer-first p {
     color: rgb(114, 111, 111);
 }
-.footer-end{
+
+.footer-end {
     display: flex;
 }
-.footer-main{
+
+.footer-main {
     margin-top: 20px;
     margin-left: -20px;
 }
-.footer-main h5{
+
+.footer-main h5 {
     width: 272.5px;
     height: 18px;
     color: #222222;
     font-size: 14px;
 }
-.footer-main p{
+
+.footer-main p {
     width: 272.5px;
     height: 18px;
     color: #6A6A6A;
     font-size: 14px;
 }
-.footer-last{
+
+.footer-last {
     width: 1835px;
     height: 375.11px;
     padding: 0px 80px;
 }
-.footer-main1{
+
+.footer-main1 {
     width: 553px;
     height: 306.09px;
     padding: 48px 0px;
 }
-.footer-main1 h5{
+
+.footer-main1 h5 {
     width: 553px;
     height: 18px;
     color: #222222;
     font-size: 14px;
-    margin: 0px 0px 0px 0px;;
+    margin: 0px 0px 0px 0px;
+    ;
 }
-.footer-main1 ul{
+
+.footer-main1 ul {
     width: 553px;
     height: 180.09px;
 }
-.footer-main1 ul li{
+
+.footer-main1 ul li {
     margin-top: 12px;
 }
-.footer-main2{
-    width: 553px;
-    height: 306.09px;
-    padding: 48px 0px;
-    margin-left: 7px;
-}
-.footer-main2 h5{
-    width: 553px;
-    height: 18px;
-    color: #222222;
-    font-size: 14px;
-    margin: 0px 0px 0px 0px;;
-}
-.footer-main2 ul{
-    width: 553px;
-    height: 180.09px;
-}
-.footer-main2 ul li{
-    margin-top: 12px;
-}
-.footer-main3{
+
+.footer-main2 {
     width: 553px;
     height: 306.09px;
     padding: 48px 0px;
     margin-left: 7px;
 }
-.footer-main3 h5{
+
+.footer-main2 h5 {
     width: 553px;
     height: 18px;
     color: #222222;
     font-size: 14px;
-    margin: 0px 0px 0px 0px;;
+    margin: 0px 0px 0px 0px;
+    ;
 }
-.footer-main3 ul{
+
+.footer-main2 ul {
     width: 553px;
     height: 180.09px;
 }
-.footer-main3 ul li{
+
+.footer-main2 ul li {
     margin-top: 12px;
 }
-.footer-end ul li{
+
+.footer-main3 {
+    width: 553px;
+    height: 306.09px;
+    padding: 48px 0px;
+    margin-left: 7px;
+}
+
+.footer-main3 h5 {
+    width: 553px;
+    height: 18px;
+    color: #222222;
+    font-size: 14px;
+    margin: 0px 0px 0px 0px;
+    ;
+}
+
+.footer-main3 ul {
+    width: 553px;
+    height: 180.09px;
+}
+
+.footer-main3 ul li {
+    margin-top: 12px;
+}
+
+.footer-end ul li {
     list-style: none;
     width: 553px;
     height: 20.02px;
 }
-#A1{
-    width:77.55px;
+
+#A1 {
+    width: 77.55px;
     height: 18px;
     color: #222222;
     font-size: 14px;
 }
-#A2{
+
+#A2 {
     width: 56.98px;
     height: 18px;
     color: #222222;
     font-size: 14px;
 }
-#A3{
+
+#A3 {
     width: 122.23px;
     height: 18px;
     color: #222222;
     font-size: 14px;
 }
-#A4{
+
+#A4 {
     width: 113.05px;
     height: 18px;
     color: #222222;
     font-size: 14px;
 }
-#A5{
+
+#A5 {
     width: 131.75px;
     height: 18px;
     color: #222222;
     font-size: 14px;
 }
-#A6{
+
+#A6 {
     width: 203.48px;
     height: 18px;
     color: #222222;
     font-size: 14px;
 }
-#B1{
+
+#B1 {
     width: 115.56px;
     height: 18px;
     color: #222222;
     font-size: 14px;
 }
-#B2{
+
+#B2 {
     width: 118.92px;
     height: 18px;
     color: #222222;
     font-size: 14px;
 }
-#B3{
+
+#B3 {
     width: 116.3px;
     height: 18px;
     color: #222222;
     font-size: 14px;
 }
-#B4{
+
+#B4 {
     width: 118.13px;
     height: 18px;
     color: #222222;
     font-size: 14px;
 }
-#B5{
+
+#B5 {
     width: 126.75px;
     height: 18px;
     color: #222222;
     font-size: 14px;
 }
-#B6{
+
+#B6 {
     width: 154.59px;
     height: 18px;
     color: #222222;
     font-size: 14px;
 }
-#C1{
+
+#C1 {
     width: 70.13px;
     height: 18px;
     color: #222222;
     font-size: 14px;
 }
-#C2{
+
+#C2 {
     width: 85.75px;
     height: 18px;
     color: #222222;
     font-size: 14px;
-}#C3{
+}
+
+#C3 {
     width: 50.48px;
     height: 18px;
     color: #222222;
     font-size: 14px;
-}#C4{
+}
+
+#C4 {
     width: 58.5px;
     height: 18px;
     color: #222222;
     font-size: 14px;
-}#C5{
+}
+
+#C5 {
     width: 181.02px;
     height: 18px;
     color: #222222;
     font-size: 14px;
 }
-.end{
+
+.end {
     display: flex;
     justify-content: space-between;
     padding: 24px 0px;
     width: 1675px;
     height: 69.02px;
 }
-.sub-end{
+
+.sub-end {
     width: 1675px;
     height: 20.02px;
     display: flex;
     justify-content: space-between;
 }
-.end-sub{
+
+.end-sub {
     display: flex;
     height: 20.02px;
     width: 453.36px;
@@ -556,7 +661,8 @@ footer{
     margin: -4px;
     padding: 4px;
 }
-.end-sub span{
+
+.end-sub span {
     width: 122.31px;
     height: 18px;
     color: #222222;
@@ -564,65 +670,76 @@ footer{
     margin: 0px 19px 0px 0px;
     text-wrap: nowrap;
 }
-#pri{
+
+#pri {
     color: #222222;
     width: 45.91px;
     height: 18px;
     font-size: 14px;
 }
-#ter{
+
+#ter {
     width: 39.78px;
     height: 18px;
     color: #222222;
     font-size: 14px;
 }
-#map{
+
+#map {
     width: 53.28px;
     height: 18px;
     color: #222222;
     font-size: 14px;
 }
-#det{
+
+#det {
     width: 108.08px;
     height: 18px;
     color: #222222;
     font-size: 14px;
     text-wrap: nowrap;
 }
-.end-sub .dot{
+
+.end-sub .dot {
     width: 19px;
     height: 18px;
     font-size: 14px;
     color: #222222;
 }
-.end-sub2{
+
+.end-sub2 {
     display: flex;
     width: 267.83px;
     height: 20.02px;
 }
-.thee{
+
+.thee {
     width: 157.83px;
     height: 20.02px;
     display: flex;
 }
-.end1{
+
+.end1 {
     width: 96.89px;
     height: 20.02px;
     margin: 0px 24px 0px 0px;
     display: flex;
 }
-.thee button{
+
+.thee button {
     width: 96.89px;
     height: 18px;
     display: flex;
     border: none;
     font-weight: bold;
 }
-.end1 button i{
+
+.end1 button i {
     width: 16px;
     height: 16px;
 }
-.end1 button span{
+
+.end1 button span {
     width: 72.89px;
     height: 18px;
     color: #222222;
@@ -630,27 +747,31 @@ footer{
     text-wrap: nowrap;
     margin-left: 10px;
 }
-.end2 button{
+
+.end2 button {
     width: 36.94px;
     height: 18px;
     display: flex;
     border: none;
     font-weight: bold;
 }
-.end2 button i{
+
+.end2 button i {
     width: 9.52px;
     height: 18px;
     color: #222222;
     font-size: 16px;
     margin: 0px 5px 0px 0px;
 }
-.end2 button span{
+
+.end2 button span {
     width: 22.42px;
     height: 18px;
     color: #222222;
     font-size: 14px;
 }
-.end3{
+
+.end3 {
     display: flex;
     width: 86px;
     height: 18px;
@@ -659,14 +780,16 @@ footer{
     font-size: larger;
     font-weight: bold;
 }
-.end3 ul{
+
+.end3 ul {
     width: 86px;
     height: 18px;
     display: flex;
     justify-content: space-between;
     font-size: 14px;
 }
-.end3 ul a i{
+
+.end3 ul a i {
     color: black;
     font-size: larger;
     width: 18px;
