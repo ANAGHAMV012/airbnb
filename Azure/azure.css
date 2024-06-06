@@ -199,6 +199,10 @@ header{
     padding: 0px 8px;
     color: #17253D;
 }
+.col-sub{
+    display: flex;
+    justify-content: center;
+}
 .col-left{
     width: 1328px;
     height: 388px;
@@ -210,6 +214,10 @@ header{
     height:284px;
     color: #17253D;
     font-size: 16px;
+}
+.col-right{
+    width: 656px;
+    height: 0px;
 }
 .innovation{
     width: 656px;
@@ -228,7 +236,7 @@ header{
     width: 656px;
     height: 96px;
     color: #17253D;
-    font-size: 20px;
+    font-size: 18px;
     margin: 16px 0px 0px;
     line-height: 30px;
 }
@@ -237,6 +245,7 @@ header{
     height: 52px;
     color: #17253D;
     font-size: 16px;
+    margin-top: 42px;
 }
 .get-start{
     width: 108.38px;
@@ -285,7 +294,7 @@ header{
     color: #FFFFFF;
     font-size: 14px;
 }
-section{
+.head{
     width: 1835px;
     height: 56px;
     color: #17253D;
@@ -339,7 +348,7 @@ section{
 }
 .sectionB{
     width: 1835px;
-    height: 6198.64px;
+    height: 740.34px;
 }
 .sectionB-sub{
     width: 1835px;
@@ -508,10 +517,11 @@ section{
     height: 763px;
 }
 .main img{
-    width: 100%;
+    width: 1835px;
+    height: 763px;
 }
 .image-container{
-    margin-top: -1127px;
+    margin-top: -765px;
     margin-left: 244px;
     width: 1511.5px;
     height: 763px;
@@ -577,7 +587,7 @@ section{
     width: 1320px;
     height: 40px;
     margin-top: 27px;
-    margin-left: 10px;
+    margin-left: 8px;
 }
 .sec-up button{
     border-radius: 25px;
@@ -660,14 +670,6 @@ section{
     padding: 0px 8px;
     font-size: 16px;
 }
-.sec-dwn-sub{
-    width: 1336px;
-    height: 560px;
-}
-.sec-subsub{
-    width: 1320px;
-    height: 528px;
-}
 .subsub{
     width: 1320px;
     height: 492px;
@@ -679,9 +681,14 @@ section{
 .subsub ul{
     width: 427.59px;
     height: 492px;
+    min-height: 226px;
+    overflow-y: auto;
+    margin-left: -260px;
 }
 .subsub ul li{
     list-style: none;
+    display: flex;
+    justify-content: right;
 }
 .side-image{
     width: 656px;
@@ -693,22 +700,29 @@ section{
     height: 492px;
     border-radius: 25px;
     margin-left: -6px;
-
 }
 .li1{
     width: 412.59px;
     height: 195px;
     color: #17253D;
     font-size: 16px;
+    display: flex;
+    justify-content: space-between;
 }
 .indicator{
-    width: 3.5px;
+    width: 2.5px;
     height: 195px;
     background-color: #0078D4;
+    display: block;
+    opacity: 1;
+    transform: scaleY(1);
+    transition: opacity, transform .8s ease-in-out;
+    margin-left: -6px;
 }
 .ocr{
     width: 361.09px;
     height: 195px;
+    border-bottom: 1px solid grey;
 }
 .button-grp{
     width: 361.09px;
@@ -720,10 +734,19 @@ section{
     color: #0E1726;
     font-size: 16px;
     padding: 0px 0px 32px;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    background-color: transparent;
+    border: none;
 }
 .button-grp button h3{
     width: 18.06px;
     height: 28px;
+}
+.button-grp button i{
+    font-size: small;
+    font-weight: 600;
 }
 .accordian{
     width: 361.09px;
@@ -765,12 +788,23 @@ section{
     color: #0E1726;
     font-size: 16px;
     text-wrap: nowrap;
+    border: none;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px;
+    border-bottom: 1px solid grey;
 }
 .li2-subsub button h3{
     width: 312.52px;
     height: 28px;
-    font-size: 20px;
+    font-size: 19px;
     color: #0E1726;
+}
+.li2-subsub button i{
+    font-size: small;
+    font-weight: 600;
 }
 .li3{
     width: 412.59px;
@@ -790,12 +824,24 @@ section{
     padding: 32px 0px;
     font-size: 16px;
     color: #0E1726;
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border-bottom: 1px solid grey;
 }
 .li3-subsub button h3{
     width: 312.52px;
     height: 28px;
     font-size: 20px;
     color: #0E1726;
+    display: flex;
+    justify-content: left;
+}
+.li3-subsub button i{
+    font-size: small;
+    font-weight: 600;
 }
 .li4{
     width: 412.59px;
@@ -816,6 +862,12 @@ section{
     color: #0E1726;
     font-size: 16px;
     text-wrap: nowrap;
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border-bottom: 1px solid grey;
 }
 .li4-subsub button h3{
     width: 67.31px;
@@ -823,9 +875,13 @@ section{
     font-size: 20px;
     color: #0E1726;
 }
+.li4-subsub button i{
+    font-size: small;
+    font-weight: 600;
+}
 .li5{
-    width: 361.09px;
-    height: 92px;
+    width: 412.58px;
+    height: 93px;
 }
 .li5-sub{
     width: 361.09px;
@@ -839,6 +895,15 @@ section{
     width: 361.09px;
     height: 92px;
     text-wrap: nowrap;
+    padding: 32px 0px;
+    color: #0E1726;
+    font-size: 16px;
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border-bottom: 1px solid grey;
 }
 .li5-subsub button h3{
     width: 176.98px;
@@ -846,14 +911,12 @@ section{
     font-size: 20px;
     color: #0E1726;
 }
-.view{
-    width: 1320px;
-    height: 35px;
-    color: #004275;
-    font-size: 14px;
+.li5-subsub button i{
+    font-size: small;
+    font-weight: 600;
 }
 .abv-footer{
-    padding-top: 5009px;
+    /* padding-top: 5009px; */
 }
 .abv-footer img{
     width: 100%
@@ -861,21 +924,31 @@ section{
 .container{
     width: 1511.5px;
     height: 355px;
-    margin-top: -530px;
+    /* margin-top: -530px; */
+    padding: 0px 253px 0px;
+    /* display: flex; */
 }
 .step1{
     width: 1344px;
     height: 48px;
+    padding: 0px 8px;
+    font-size: 16px;
+    margin-left: -10px;   
+    /* margin-top: 35px;  */
 }
 .step1-sub{
     width: 1328px;
     height: 48px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
 }
 .step1-sub h3{
     width: 297.31px;
     height: 48px;
-    font-size: 40px;
+    font-size: 44px;
     color: #0E1726;
+    text-wrap: nowrap;
 }
 .step2{
     width:1336px;
@@ -891,10 +964,18 @@ section{
     color: #17253D;
     font-size: 16px;
     display: flex;
+    justify-content: space-between;
+    margin-top: 46px;
+}
+.step2-subsub button{
+    border: none;
+    border-radius: 6px;
 }
 .card1{
     width: 429.33px;
     height: 259px;
+    font-size: 16px;
+    border-radius: 20px;
 }
 .card1-sub{
     width: 429.33px;
@@ -965,6 +1046,9 @@ section{
 .card2{
     width: 429.33px;
     height: 259px;
+    font-size: 16px;
+    color: #17253D;
+    border-radius: 20px;
 }
 .card2-sub{
     width: 429.33px;
@@ -1019,6 +1103,7 @@ section{
 .card3{
     width: 429.33px;
     height: 259px;
+    border-radius: 20px;
 }
 .card3-sub{
     width: 429.33px;
@@ -1070,6 +1155,165 @@ section{
     font-size: 14px;
     padding: 0px 0px 2px;
 }
+.view{
+    margin-top: 30px;
+}
+.view button{
+    width: 34.7px;
+    height: 35px;
+    color: #FFFFFF;
+    font-size: 15px;
+    background-color: #0078D4;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    font-weight: lighter;
+}
+.view span{
+    font-size: small;
+    font-weight: bold;
+    color: #004275;
+}
+.section-master{
+    width: 1835px;
+    height: 1039px;
+}
+.section-master-sub{
+    width: 1835px;
+    height: 1039px;
+    padding: 96px 0px;
+    font-size: 16px;
+    color: #17253D;
+    background-color: #FAF4FD;
+    background-image: url(images/product-background_desktop_homepage.avif);
+}
+.master-sub{
+    width: 1600px;
+    height: 1039px;
+}
+.master-sub img{
+    width: 1600px;
+    height: 1129px;
+}
+.master-subsub{
+    width: 1511.5px;
+    height: 847px;
+    color: #17253D;
+    margin: 0px 161.75px;
+    padding: 0px 91.75px;
+    font-size: 16px;
+}
+.master-up{
+    width: 1344px;
+    height: 64px;
+    font-size: 16px;
+}
+.master-up-sub{
+    width: 1328px;
+    height: 64px;
+    color: #17253D;
+    font-size: 16px;
+}
+.master-up-subsub{
+    width: 559.69px;
+    height: 64px;
+    font-size: 16px;
+}
+.master1{
+    width: 559.69px;
+    height: 16px;
+    margin: 0px 0px 8px;
+    font-size: 12px;
+}
+.master2 h2{
+    width: 559.69px;
+    height: 40px;
+    font-size: 32px;
+    text-wrap: nowrap;
+}
+.master-dwn{
+    width: 1336px;
+    height: 735px;
+}
+.master-dwn-sub{
+    width: 1336px;
+    height: 735px;
+}
+.master-dwn-subsub{
+    width: 1320px;
+    height: 652px;
+}
+.masterA{
+    width: 1320px;
+    height: 40px;
+    padding-top: 45px;
+}
+.masterA-sub button{
+    height: 40px;
+    color: #004275;
+    font-size: 16px;
+    background-color: #0055971A;
+    margin: 0px 8px 0px 0px;
+    padding: 8px 24px;
+    border-radius: 25px;
+    text-wrap: nowrap;
+    border: none;
+    font-weight: bold;
+}
+.masterA-sub .fea{
+    width: 112.08px;
+    height: 40px;
+    color: #FFFFFF;
+    font-size: 16px;
+    background-color: #005597;
+    margin: 0px 8px 0px 0px;
+    padding: 8px 24px;
+    border-radius: 25px;
+    text-wrap: nowrap;
+    border: none;
+    font-weight: bold;
+}
+.masterB{
+    width: 1336px;
+    height: 612px;
+    margin: 86px 0px;
+    font-size: 16px;
+}
+.masterB-sub{
+    display: flex;
+    justify-content: space-between;
+}
+.masterB-left{
+    /* overlay:var(0,0,0,0.6); */
+    /* overlay:var(#20c083); */
+    position: relative;
+    display: inline-block;
+}
+.masterB-left::before{
+    content:"";
+    position: absolute;
+    /* background-color: rgba(0,0,0,0.6); */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.8) 20%, rgba(0,0,0,0.1) 80%);
+    border-radius: 18px;
+}
+.masterB-left img{
+    border-radius: 18px;
+}
+.masterB-right{
+    width: 1002px;
+    height: 564px;
+    padding: 0px 8px;
+}
+.masterB-right-sub{
+    width: 986px;
+    height: 564px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
 footer{
     width: 1835px;
     height: 658.19px;
@@ -1077,7 +1321,7 @@ footer{
     font-size: 12px;
     background-color: #F4F5F6;
     padding: 48px 0px 36px;
-    margin-top: 5540px;
+    /* margin-top: 5540px; */
 }
 .footer-sub{
     width: 1600px;
