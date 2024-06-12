@@ -12,16 +12,21 @@ header{
     font-size: 16px;
     background-color:#FFFFFF;
     justify-content: center;
+    display: flex;
 }
 .header{
-    display: flex;
-    width: 1600px;
+    width: 1835px;
     height: 54px;
-    justify-content: center;
     color: #1A1A1F;
     background-color: #FFFFFF;
-    font-size: 15px;
-    margin: auto;
+    font-size: 13px;
+    margin: 0px 0px 2px;
+    padding: 0px 91.75px;
+}
+.header1{
+    width: 1600px;
+    height: 54px;
+    align-items: center;
 }
 .header2{
     display: flex;
@@ -41,15 +46,30 @@ header{
     width: 38.1px;
     height: 35px;
 }
+.header1 a span{
+    color: #000000;
+    font-weight: 600;
+    font-size: 18px;
+}
+.gap::before{
+    width: 26px;
+    height: 24px;
+    margin: 0px 0px 0px 7px;
+    padding: 0px 0px 0px 24px;
+    color: black;
+}
 .logo{
-    width: 92.78px;
-    height: 26.25px;
-    /* font-size: 15px; */
-    display: flex;
-    align-items: center;
-    margin-left: -25px;
-    margin-top: 2px;
-    /* padding: 10px; */
+    width: 137px;
+    height: 54px;
+    color: #262626;
+    font-size: 13px;
+    margin: 1px 0px 0px;
+    padding: 16px 6px 16px 10px;
+}
+.logo img{
+    width: 108px;
+    height: 23px;
+    margin: -3px 0px 0px;
 }
 .logo-text{
     padding-left: 16px;
@@ -59,17 +79,40 @@ header{
 }
 .header1 .icons ul{
     display: flex;
-    gap: 50px;
+    gap: 70px;
     list-style: none;
+    width: 816.97px;
+    height:52px;
+    font-size: 13px;
 }
 .icons{
+    width: 816.97px;
+    height:52px;
     font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 11px;
 }
+.icons ul a{
+    width: 816.97px;
+    height: 54px;
+    color: #262626;
+    font-size: 13px;
+    margin: 1px 0px 0px 32px;
+    padding: 16px 10px;
+}
+.icons ul a span{
+    width: 47.17px;
+    height: 24px;
+    color: #262626;
+    font-size: 18px;
+    margin: -3px 0px 0px;
+}
 .icons ul li{
     margin-left: -30px;
     width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .icons ul li button{
     display: flex;
@@ -90,35 +133,34 @@ header{
 }
 .right{
     display: flex;
+    width: 543.86px;
+    height: 54px;
+    color: #000000;
+    font-size: 13px;
 }
-.header2{
+.form{
+    width: 90px;
+    height: 38px;
     display: flex;
-    justify-content: space-between;
 }
-.header2 button{
-    display: flex;
+form button{
     align-items: center;
-    width: 120px;
-    height: 32px;
+    width: 77.77px;
+    height: 45px;
     gap: 20px;
     font-size: 13px;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    margin-left: -30px;
+    margin: 0px 1px 1px;
+    color: #000000;
+    background-color: transparent;
+    border: none;
 }
-.header2 button input{
+form button input{
     width: 50px;
     border: none;
     background-color: transparent;
 }
-.header2 button i{
+form button i{
     color: grey;
-}
-.header2 ul{
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
 }
 .header3{
     width: 361.25px;
@@ -171,6 +213,7 @@ header{
     padding: 9px;
     font-size: 12px;
     text-wrap: nowrap;
+    border: none;
 }
 .vid video{
     width: 100%;
@@ -198,10 +241,6 @@ header{
     font-size: 16px;
     padding: 0px 8px;
     color: #17253D;
-}
-.col-sub{
-    display: flex;
-    justify-content: center;
 }
 .col-left{
     width: 1328px;
@@ -240,14 +279,29 @@ header{
     margin: 16px 0px 0px;
     line-height: 30px;
 }
-.bottom{
+.col-left .bottom{
     width: 656px;
     height: 52px;
     color: #17253D;
     font-size: 16px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bottom-sub{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.Asub-sub .bottom{
+    width: 656px;
+    height: 52px;
+    color: #17253D;
+    font-size: 16px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-family:Arial, Helvetica, sans-serif;
 }
 .get-start{
     width: 108.38px;
@@ -275,6 +329,10 @@ header{
     background-color: #89C402;
     padding: 12px 16px;
     border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-wrap: nowrap;
 }
 .try-azure span{
     width: 114.08px;
@@ -374,7 +432,6 @@ header{
 .up{
     width: 1344px;
     height: 64px;
-    /* padding: 0px 8px; */
     font-size: 16px;
 }
 .up-sub{
@@ -407,7 +464,6 @@ header{
 .down{
     width: 1336px;
     height: 436.34px;
-    /* padding: 0px 8px; */
     font-size: 16px;
 }
 .down-sub{
@@ -460,7 +516,8 @@ header{
     width: 213.53px;
     height: 28px;
     color: #0E1726;
-    font-size: 19px;line-height: 40px;
+    font-size: 19px;
+    line-height: 40px;
     text-wrap: nowrap;
 }
 .blv1-sub2{
@@ -951,7 +1008,6 @@ header{
     padding: 0px 8px;
     font-size: 16px;
     margin-left: -10px;   
-    /* margin-top: 35px;  */
 }
 .step1-sub{
     width: 1328px;
@@ -993,7 +1049,7 @@ header{
     height: 259px;
     font-size: 16px;
     border-radius: 20px;
-    border: 1px solid grey;
+    border: 1px solid rgb(190, 187, 187);
     background-color: #FFFFFF;
 }
 .card1-sub{
@@ -1077,7 +1133,7 @@ header{
     font-size: 16px;
     color: #17253D;
     border-radius: 20px;
-    border: 1px solid grey;
+    border: 1px solid rgb(192, 187, 187);
     background-color: #FFFFFF;
 }
 .card2-sub{
@@ -1145,7 +1201,7 @@ header{
     width: 429.33px;
     height: 259px;
     border-radius: 20px;
-    border: 1px solid grey;
+    border: 1px solid rgb(192, 187, 187);
     background-color: #FFFFFF;
 }
 .card3-sub{
@@ -1418,14 +1474,9 @@ header{
     font-weight: bold;
 }
 .masterB-right{
-    /* width: 1002px; */
-    /* height: 568px; */
-    /* padding: 0px 8px; */
     color: #17253D;
 }
 .masterB-right-sub{
-    /* width: 986px; */
-    /* height: 568px; */
     color: #17253D;
     font-size: 16px;
     display: grid;
@@ -2620,7 +2671,9 @@ select{
     height: 80px;
     color: #1A1A1F;
     font-size: 12px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    align-items:end;
     margin: 0;
     padding: 0;
 }
@@ -2768,20 +2821,26 @@ select{
     font-size: 12px;
     margin: 0px 0px 0px 12px;
     padding: 2px 0px;
+    display: block;
 }
 .copy span{
     width: 88.7px;
     height: 16px;
     color: #1A1A1F;
     font-size: 12px;
+    display: block;
 }
 .foot-end-dwn{
     width: 150.67px;
     height: 50px;
     color: #17253D;
     font-size: 16px;
-    margin-top: -14px;
-    margin-left: 1668px;
+    /* margin-top: -14px; */
+    /* margin-left: 1668px; */
+    position: fixed;
+    bottom: o;
+    right: 1rem;
+    left: 0;
 }
 .foot-end-dwn button{
     width: 150.67px;
@@ -2789,7 +2848,7 @@ select{
     color: #FFFFFF;
     font-size: 15px;
     background-color: #0067B8;
-    padding: 12px 16px 12px 33.5625px;
+    /* padding: 12px 16px 12px 33.5625px; */
     text-wrap: nowrap;
     border-radius: 8px;
     border: none;
@@ -2797,5 +2856,8 @@ select{
 .foot-end-dwn button i{
     width: 14.7px;
     height: 15px;
-    margin: -7.5px 0px 0px;
+    /* margin: -7.5px 0px 0px; */
+}
+button:hover{
+    background-color: #016ec2;
 }
