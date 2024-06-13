@@ -1,60 +1,186 @@
+
+@font-face {
+    font-family: 'lw';
+    src: url(fonts/latest.woff2);
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family:'lw';
+}
+header{
+    width: 100%;
+    padding: 0px 5%;
+    margin: 0px 0px 2px;
 }
 .header{
+    width: 100%;
     display: flex;
-    padding-left: 200px;
-    border-bottom: 1px solid rgb(241, 238, 238);
-    height: 56px;
+   /* max-width: 1600px; */
     justify-content: space-between;
+    margin: 0 auto;
 }
-.header .header1{
+.left {
     display: flex;
-    gap: 50px;
-    align-items: center;
-    margin-left: -86px;
-}
-.header1 img{
-    width: 38.1px;
-    height: 35px;
 }
 .logo{
     display: flex;
     align-items: center;
-    padding: 10px;
-    margin-top: 6px;
+    justify-content: center;
+    margin: 1px 0px 0px;
+    padding: 16px 6px 16px 10px;
 }
-.logo-text{
-    padding-left: 16px;
-    font-size: 16px;
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    margin-top: -5px;
+.logo img{
+    height: 23px;
+    margin: -3px 0px 0px;
 }
-.header1 .icons ul{
+.gap-div {
     display: flex;
-    gap: 50px;
-    list-style: none;
+    align-items: center;
+    position: relative;  
 }
-.icons{
+.gap-div::before{
+    border-left: 2px solid #000;
+    height: 24px;
+    content: "";
+    margin-left: 7px;
+    position: absolute;
+    top: 34%;   
+}
+.gap1{
+    margin: 1px 0px 0px 32px;
+    padding: 16px 10px;
+    display: flex;
     font-size: 13px;
+}
+.gap1 span{
+    display: block;
+    color: #262626;
+    font-weight: 600;
+    font-size: 17px;
+    margin: 1px 0px 0px;
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: 0px;
+}
+.icons ul{
+    
+    display: flex;
+    justify-content: left;
 }
 .icons ul li{
-    margin-left: -27px;
-    width: 50px;
+    list-style: none;
 }
-section{
-    width: 1835px;
-    height: 628px;
-    background-image: url(images/Desktop-ProductsServices-Feature-AzureAIStudio@2x\ \(1\).avif);
-    /* background-size: cover; */
-    padding: 0px 8px;
-    background-position: 40vh;
-    background-repeat: no-repeat;
-    background-size: 1700px
+.icons ul li button{
+    display: flex;
+    justify-content: space-between;
+    height: 51px;
+}
+.icons button span{
+    font-size: 13px;
+    font-weight: 2px;
+    color: rgb(73, 71, 71);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons ul li button i{
+    padding: 7px 0px 0px;
+    color: #262626;
+    font-weight: light;
+    font-size: 8px;
+}
+.button1, .button2, .button3, .button4, .button5{
+    margin: 1px -6px 0px 0px;
+    padding: 16px 30px 16px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button6{
+    margin: 1px 0px 0px;
+    padding: 16px 30px 16px 12px;
+}
+.right{
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    padding: 0px 1px 0px 2px;
+}
+form{
+    margin: 3px 0px 0px;
+}
+.button7{
+    margin: 0px 1px 1px;
+    padding: 15px 9px 30px;
+    display: flex;
+    height: 45px;
+}
+.button7 i{
+    margin: 0px 0px 0px 2px;
+}
+.header3 ul{
+    display: flex;
+}
+.header3 ul li{
+    text-wrap: nowrap;
+    list-style: none;
+}
+.Learn, .support, .sales{
+    margin: 1px 4px 0px;
+    padding: 16px 8px 10px;
+}
+.free{
+    background-color: #89C402;
+    margin: 11px 10px 1px;
+    padding: 4px 8px 10px;
+}
+.signing{
+    margin: 11px 10px 1px;
+    padding: 4px 8px 10px;
+}
+header button{
+    background: transparent;
+    border: none;
+}
+.right{
+    display: flex;
+    color: #000000;
+    font-size: 13px;
+    justify-content: space-between;
+    align-items: center;
+}
+form button{
+    align-items: center;
+    
+    font-size: 13px;
+    background-color: transparent;
+    border: none;
+}
+form button input{
+    
+    border: none;
+    background-color: transparent;
+}
+.Learn{
+    color: #262626;
+    margin: 1px 4px 0px;
+    padding: 16px 8px 10px;
+}
+.support{
+    color: #262626;
+    margin: 1px 4px 0px;
+    padding: 16px 8px 10px;
+}
+.sales{
+    color: #262626;
+    margin: 1px 4px 0px;
+    padding: 16px 8px 10px;
+}
+.signing{
+    color: #262626;
+    margin: 11px 10px 1px;
+    padding: 4px 8px 10px;
+    border: 1px solid #000000;
+    border-radius: 3px;
 }
