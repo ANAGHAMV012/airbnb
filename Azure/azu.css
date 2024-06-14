@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'lw';
     src: url(fonts/latest.woff2);
@@ -10,25 +9,298 @@
     text-decoration: none;
     font-family:'lw';
 }
-header{
-    width: 100%;
-    padding: 0px 5%;
-    margin: 0px 0px 2px;
+@media screen and (max-width:859px){
+.header2{
+    display: none;
 }
-.header{
+.header1{
+    display: flex;
+    height: 54px;
+    border-bottom: 1px solid #000000;
+}
+.header3{
+    display: none;
+}
+.header1{
     width: 100%;
     display: flex;
-   /* max-width: 1600px; */
     justify-content: space-between;
-    margin: 0 auto;
 }
-.left {
+.header1-sub{
+    height: 34px;
     display: flex;
 }
-.logo{
+.header1-sub button{
+    display: flex;
+    margin: 0px 1px;
+    padding: 0px 15px;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+}
+.header1-sub button span{
+
+}
+.header1-sub button i{
+    padding: 0px 0px 0px 7px;
+}
+.nav1, a, .ntg{
+    width: 30%;
+}
+.nav1 .hmbrgr{
+    margin: 1px;
+    width: 48px;
+    padding: 6px 0px 8px;
+    border: none;
+    background-color: transparent;
+}
+.nav1 .hmbrgr i{
+    margin: 7px 0px 0px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    font-weight: light;
+}
+.srch{
+    margin: 2px 6px 1px 2px;
+    padding: 8px 8px 8px 0px;
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+}
+.srch i{
+    width: 16px;
+    height: 18px;
+    margin: 0px 0px 0px 2px;
+    font-weight: light;
+}
+.logo1{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 12px 4px;
+    margin-left: -1px;
+}
+
+.logo1 img{
+    height: 23px;
+    margin: -6px 0px 1px;
+
+}
+}
+@media screen and (min-width:860px) and (max-width:1083px){
+
+header{
+    padding: 0px 24px;
+    margin: 0px 0px 2px;
+}
+.header1{
+    display: none;
+}
+.header1-sub{
+    display:none;
+}
+.header3{
+    display: flex;
+    justify-content: space-between;
+}
+.header4{
+    display: none;
+}
+.button7 span{
+    display: none;
+}
+.button7 i{
+    align-items: center;
+}
+.li02{
+    display: none;
+}
+.left {
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 137px;
+    margin: 1px 0px 0px;
+    padding: 16px 6px 16px 10px;
+    font-size: 13px;
+}
+.logo img{
+    height: 23px;
+    margin: -3px 0px 0px;
+}
+.gap-div {
+    display: flex;
+    align-items: center;
+}
+.gap-div::before{
+    border-left: 2px solid #000;
+    content: "";
+    height: 24px;
+    margin-left: 7px;
+    position: absolute;
+    top: 15px;
+}
+.gap1{
+    height: 54px;
+    margin: 1px 0px 0px 18px;
+    padding: 16px 6px 16px 10px;
+    display: flex;
+    font-size: 13px;
+}
+.gap1 span{
+    display: block;
+    color: #262626;
+    font-weight: 600;
+    font-size: 17px;
+    margin: 0px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.icons ul{ 
+    display: flex;
+    justify-content: left;
+}
+.icons ul li{
+    list-style: none;
+}
+.icons ul li button{
+    display: flex;
+    justify-content: space-between;
+    height: 51px;
+}
+.icons button span{
+    font-size: 13px;
+    font-weight: 2px;
+    color: rgb(73, 71, 71);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons ul li button i{
+    padding: 7px 0px 0px;
+    color: #262626;
+    font-weight: light;
+    font-size: 8px;
+    margin-left: 5px;
+}
+.button1, .button2, .button3, .button4, .button5{
+    margin: 1px -10px 0px 0px;
+    padding: 16px 30px 16px 12px;
+    font-size: 13px;
+}
+.button6{
+    margin: 1px 0px 0px;
+    padding: 16px 30px 16px 12px;
+}
+.right{
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    padding: 0px 1px 0px 2px;
+}
+form{
+    margin: 3px 0px 0px;
+}
+.button7{
+    margin: 0px 1px 1px;
+    padding: 15px 9px 30px;
+    display: flex;
+    height: 45px;
+}
+.button7 i{
+    margin: 0px 0px 0px 2px;
+}
+.header3 ul{
+    display: flex;
+}
+.header3 ul li{
+    text-wrap: nowrap;
+    list-style: none;
+}
+.Learn, .support, .sales{
+    margin: 1px 4px 0px;
+    padding: 16px 8px 10px;
+}
+.free{
+    background-color: #89C402;
+    margin: 11px 10px 1px;
+    padding: 4px 8px 10px;
+}
+.signing{
+    margin: 11px 10px 1px;
+    padding: 4px 8px 10px;
+}
+header button{
+    background: transparent;
+    border: none;
+}
+.right{
+    display: flex;
+    color: #000000;
+    font-size: 13px;
+    justify-content: center;
+    align-items: center;
+}
+form button{
+    align-items: center;
+    font-size: 13px;
+    background-color: transparent;
+    border: none;
+}
+form button input{
+    
+    border: none;
+    background-color: transparent;
+}
+.Learn{
+    color: #262626;
+    margin: 1px 4px 0px;
+    padding: 16px 8px 10px;
+}
+.support{
+    color: #262626;
+    margin: 1px 4px 0px;
+    padding: 16px 8px 10px;
+}
+.sales{
+    color: #262626;
+    margin: 1px 4px 0px;
+    padding: 16px 8px 10px;
+}
+.signing{
+    color: #262626;
+    margin: 11px 10px 1px;
+    padding: 4px 8px 10px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+}
+}
+@media screen and (min-width:1083px){
+header{
+    padding: 0px 5%;
+    margin: 0px 0px 2px;
+}
+.header1{
+    display: none;
+}
+.header1-sub{
+    display:none;
+}
+.li02{
+    display: none;
+}
+.header3{
+    display: flex;
+    justify-content: space-between;
+}
+.left {
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 137px;
     margin: 1px 0px 0px;
     padding: 16px 6px 16px 10px;
 }
@@ -39,19 +311,17 @@ header{
 .gap-div {
     display: flex;
     align-items: center;
-    position: relative;  
 }
 .gap-div::before{
     border-left: 2px solid #000;
-    height: 24px;
     content: "";
+    height: 24px;
     margin-left: 7px;
     position: absolute;
-    top: 34%;   
 }
 .gap1{
-    margin: 1px 0px 0px 32px;
-    padding: 16px 10px;
+    margin: 1px 0px 0px 18px;
+    padding: 16px 6px 16px 10px;
     display: flex;
     font-size: 13px;
 }
@@ -147,12 +417,11 @@ header button{
     display: flex;
     color: #000000;
     font-size: 13px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 form button{
     align-items: center;
-    
     font-size: 13px;
     background-color: transparent;
     border: none;
@@ -183,4 +452,14 @@ form button input{
     padding: 4px 8px 10px;
     border: 1px solid #000000;
     border-radius: 3px;
+}
+}
+@media screen and (min-width: 1440px){
+header{
+    max-width: 1835px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
 }

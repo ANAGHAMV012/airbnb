@@ -36,8 +36,8 @@ header{
     display: flex;
 }
 .header1{
-    width: 598.55px;
-    height: 53px;
+    /* width: 598.55px;
+    height: 53px; */
     color: #1A1A1F;
     font-size: 15px;
     margin: 0px 496.203px 0px 0px;
@@ -46,17 +46,17 @@ header{
     gap: 50px;
     align-items: center;
 }
-.header1 img{
+/* .header1 img{
     width: 38.1px;
     height: 35px;
-}
-.gap-div{
+} */
+/* .gap-div{
     width: 99.17px;
     height: 54px;
-}
+} */
 .gap-div a{
-    width: 67.17px;
-    height: 54px;
+    /* width: 67.17px; */
+    /* height: 54px; */
     color: #262626;
     font-size: 13px;
     /* margin: 1px 0px 0px 32px; */
