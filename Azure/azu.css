@@ -9,6 +9,157 @@
     text-decoration: none;
     font-family:'lw';
 }
+.vid video{
+    width: 100%;
+    height: 628px;
+    display: block;
+    object-fit: cover;
+}
+.video-container{
+    top: 140px;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 65px;
+    position: absolute;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* .row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -.25rem;
+    margin-left: -.25rem;
+}
+.col{
+    font-size: 16px;
+    padding: 0px 8px;
+    color: #17253D;
+}
+.col-left{
+    font-size: 16px;
+    color: #17253D;
+} */
+.get-start{
+    width: 100%;
+    height: 52px;
+    color: #FFFFFF;
+    font-size: 23px;
+    background-color: #0078D4;
+    padding: 12px 16px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-wrap: nowrap;
+}
+.get-start span{
+    width: 72.38px;
+    height: 24px;
+    color: #FFFFFF;
+    font-size: 15px;
+    padding: 0px 0px 2px;
+}
+.try-azure1{
+    width: 100%;
+    height: 52px;
+    color: #000000;
+    font-size: 15px;
+    background-color: #000000;
+    background-color: #89C402;
+    padding: 12px 16px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-wrap: nowrap;
+}
+.try-azure{
+    width: 100%;
+    height: 36px;
+    color: #000000;
+    font-size: 15px;
+    background-color: #000000;
+    background-color: #89C402;
+    padding: 12px 16px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-wrap: nowrap;
+    font-weight: bold;
+}
+.try-azure span{
+    /* width: 114.08px; */
+    height: 24px;
+    color: #000000;
+    font-size: 15px;
+    padding: 0px 0px 2px;
+}
+.col{
+    height: 388px;
+    font-size: 16px;
+    padding: 0px 8px;
+    color: #17253D;
+}
+.col-left{
+    font-size: 16px;
+    color: #17253D;
+    height:284px;
+}
+.col-right{
+    height: 0px;
+}
+.innovation{
+    height: 16px;
+    font-size: 12px;
+    color: #17253D;
+    font-weight: 400;
+}
+.future h1{
+    color: #0E1726;
+}
+.para{
+    height: 96px;
+    color: #17253D;
+    font-size: 18px;
+    line-height: 30px;
+}
+.header1-sub button{
+    height: 33px;
+    width: 92.44px;
+}
+.header1-sub i{
+    width: 19px;
+    height: 12px;
+}
+.header1-sub span{
+    width: 73.44pxz;
+}
+@media screen and (max-width: 539px){
+.bottom-sub{
+    width: 100%;
+}
+.get-start{
+    width: 100%;
+    height: 52px;
+    color: #FFFFFF;
+    font-size: 23px;
+    background-color: #0078D4;
+    /* padding: 12px 16px; */
+    border-radius: 8px;
+}
+.get-start span{
+    /* width: 72.38px; */
+    height: 24px;
+    color: #FFFFFF;
+    font-size: 15px;
+    padding: 0px 0px 2px;
+}
+.header1-sub button span{
+    font-weight: bolder;
+}
+}
 @media screen and (max-width:859px){
 .header2{
     display: none;
@@ -38,9 +189,6 @@
     align-items: center;
     border: none;
     background-color: transparent;
-}
-.header1-sub button span{
-
 }
 .header1-sub button i{
     padding: 0px 0px 0px 7px;
@@ -92,7 +240,7 @@
 @media screen and (min-width:860px) and (max-width:1083px){
 
 header{
-    padding: 0px 24px;
+    padding: 0px 5%;
     margin: 0px 0px 2px;
 }
 .header1{
@@ -103,7 +251,6 @@ header{
 }
 .header3{
     display: flex;
-    justify-content: space-between;
 }
 .header4{
     display: none;
@@ -117,9 +264,14 @@ header{
 .li02{
     display: none;
 }
-.left {
+.fstprt{
     display: flex;
-    align-items: center;
+    justify-content: start;
+}
+.rmng{
+    display: flex;
+    justify-content: space-between;
+    flex:1;
 }
 .logo{
     width: 137px;
@@ -149,18 +301,19 @@ header{
     padding: 16px 6px 16px 10px;
     display: flex;
     font-size: 13px;
+    color: #262626;
 }
 .gap1 span{
     display: block;
     color: #262626;
     font-weight: 600;
     font-size: 17px;
-    margin: 0px 0px 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 .icons ul{ 
     display: flex;
     justify-content: left;
+    margin-left:2px;
 }
 .icons ul li{
     list-style: none;
@@ -184,15 +337,645 @@ header{
     font-weight: light;
     font-size: 8px;
     margin-left: 5px;
+    margin-top: -5px;
+}
+.button1, .button2, .button3, .button4, .button5, .button6{
+    margin: 1px -10px 0px 0px;
+    padding: 16px 20px 16px 12px;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right{
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    padding: 0px 1px 0px 2px;
+}
+form{
+    margin: 3px 0px 0px;
+}
+.button7{
+    margin: 0px 6px 1px;
+    padding: 15px 9px 30px;
+    display: flex;
+    height: 45px;
+}
+.button7 i{
+    margin: 12px 0px 0px 2px;
+    color: #262626;
+}
+.header3 ul{
+    display: flex;
+}
+.header3 ul li{
+    text-wrap: nowrap;
+    list-style: none;
+}
+.Learn, .support, .sales{
+    margin: 1px 4px 0px;
+    padding: 16px 8px 10px;
+}
+.free{
+    background-color: #89C402;
+    margin: 11px 10px 1px;
+    padding: 4px 8px 10px;
+}
+.signing{
+    margin: 11px 10px 1px;
+    padding: 4px 8px 10px;
+}
+header button{
+    background: transparent;
+    border: none;
+}
+.right{
+    display: flex;
+    color: #000000;
+    font-size: 13px;
+    justify-content: center;
+    align-items: center;
+}
+form button{
+    align-items: center;
+    font-size: 13px;
+    background-color: transparent;
+    border: none;
+}
+form button input{
+    
+    border: none;
+    background-color: transparent;
+}
+.Learn{
+    color: #262626;
+    margin: 1px 4px 0px;
+    padding: 16px 8px 10px;
+}
+.support{
+    color: #262626;
+    margin: 1px 4px 0px;
+    padding: 16px 8px 10px;
+}
+.sales{
+    color: #262626;
+    margin: 1px 4px 0px;
+    padding: 16px 8px 10px;
+}
+.signing{
+    color: #262626;
+    margin: 11px 10px 1px;
+    padding: 4px 8px 10px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+}
+}
+@media screen and (min-width:1084px) and (max-width:1172px){
+header{
+    height: 54px;
+    padding: 0px 5%;
+    /* margin: 0px 0px 2px; */
+}
+.header1{
+    display: none;
+}
+.header1-sub{
+    display:none;
+}
+.li011, .li012, .li013, .li014{
+    display: none;
+}
+.button7 span{
+    display: none;
+}
+.header3{
+    display: flex;
+}
+.fstprt{
+    display: flex;
+    justify-content: start;
+}
+.rmng{
+    display: flex;
+    justify-content: space-between;
+    flex:1;
+}
+.logo{
+    width: 137px;
+    margin: 1px 0px 0px;
+    padding: 16px 6px 16px 10px;
+    /* font-size: 13px; */
+}
+.logo img{
+    height: 23px;
+    margin: -3px 0px 0px;
+}
+.gap-div {
+    display: flex;
+    align-items: center;
+}
+.gap-div::before{
+    border-left: 2px solid #000;
+    content: "";
+    height: 24px;
+    margin-left: 7px;
+    position: absolute;
+    top: 15px;
+}
+.gap1{
+    margin: 1px 0px 0px 18px;
+    padding: 16px 6px 16px 10px;
+    display: flex;
+    font-size: 13px;
+    color: #262626;
+    height: 54px;
+}
+.gap1 span{
+    display: block;
+    color: #262626;
+    font-weight: 600;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.icons ul{
+    display: flex;
+    justify-content: left;
+    /* margin-left: 2px; */
+}
+.icons ul li{
+    list-style: none;
+}
+.icons ul li button{
+    display: flex;
+    justify-content: space-between;
+    height: 51px;
+}
+.icons button span{
+    font-size: 13px;
+    font-weight: 2px;
+    color: rgb(73, 71, 71);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons ul li button i{
+    padding: 7px 0px 0px;
+    color: #262626;
+    font-weight: light;
+    font-size: 8px;
+    margin-left: 5px;
+    margin-top: -5px;
 }
 .button1, .button2, .button3, .button4, .button5{
     margin: 1px -10px 0px 0px;
-    padding: 16px 30px 16px 12px;
+    padding: 16px 20px 16px 12px;
     font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button8{
+    margin: 1px 5px 0px 0px;
+    padding: 16px 20px 16px 12px;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right{
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    padding: 0px 1px 0px 2px;
+}
+form{
+    margin: 3px 0px 0px;
+}
+.button7{
+    margin: 0px 6px 1px;
+    padding: 15px 9px 30px;
+    display: flex;
+    height: 45px;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.button7 i{
+    margin: 12px 0px 0px 2px;
+    color: #262626;
+}
+.header3 ul{
+    display: flex;
+}
+.header3 ul li{
+    text-wrap: nowrap;
+    list-style: none;
+}
+.free{
+    height: 31px;
+    background-color: #89C402;
+    margin: 11px 8px 1px;
+    padding: 4px 8px 10px;
+    display: flex;
+    border-radius: 3px;
+}
+.signing{
+    height: 31px;
+    margin: 11px 8px 1px;
+    padding: 4px 8px 10px;
+    display: flex;
+    color: #262626;
+    border: 1px solid #000000;
+    border-radius: 3px;
+}
+.lifree, .lisin{
+    height: 43px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+header button{
+    background: transparent;
+    border: none;
+}
+form button{
+    align-items: center;
+    font-size: 13px;
+    background-color: transparent;
+    border: none;
+}
+form button input{
+    border: none;
+    background-color: transparent;
+}
+.header4{
+    height: 54px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.header4 ul{
+    padding: 0px;
+    height: 54px;
+}
+.header4 ul li{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.Learn{
+    height: 48px;
+    color: #262626;
+    margin: 1px 0px 0px;
+    padding: 16px 8px 10px;
+}
+.support{
+    color: #262626;
+    margin: 1px 4px 0px;
+    padding: 16px 8px 10px;
+    height: 48px;
+}
+.sales{
+    color: #262626;
+    margin: 1px 0px 0px;
+    padding: 16px 8px 10px;
+    height: 48px;
+}
+}
+@media screen and (min-width:1173px) and (max-width:1253px){
+header{
+    padding: 0px 5%;
+    margin: 0px 0px 2px;
+}
+.header1{
+    display: none;
+}
+.header1-sub{
+    display:none;
+}
+.li012, .li013, .li014{
+    display: none;
 }
 .button6{
+    display: none;
+}
+.button7 span{
+    display: none;
+}
+.header3{
+    display: flex;
+}
+.fstprt{
+    display: flex;
+    justify-content: start;
+}
+.rmng{
+    display: flex;
+    justify-content: space-between;
+    flex:1;
+}
+.logo{
+    width: 137px;
     margin: 1px 0px 0px;
-    padding: 16px 30px 16px 12px;
+    padding: 16px 6px 16px 10px;
+    font-size: 13px;
+}
+.logo img{
+    height: 23px;
+    margin: -3px 0px 0px;
+}
+.gap-div {
+    display: flex;
+    align-items: center;
+}
+.gap-div::before{
+    border-left: 2px solid #000;
+    content: "";
+    height: 24px;
+    margin-left: 7px;
+    position: absolute;
+    top: 15px;
+}
+.gap1{
+    height: 54px;
+    margin: 1px 0px 0px 18px;
+    padding: 16px 6px 16px 10px;
+    display: flex;
+    font-size: 13px;
+    color: #262626;
+}
+.gap1 span{
+    display: block;
+    color: #262626;
+    font-weight: 600;
+    font-size: 17px;
+    /* margin: 1px 0px 0px; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+.icons ul{
+    display: flex;
+    justify-content: left;
+    margin-left: 2px;
+}
+.icons ul li{
+    list-style: none;
+}
+.icons ul li button{
+    display: flex;
+    justify-content: space-between;
+    height: 51px;
+}
+.icons button span{
+    font-size: 13px;
+    font-weight: 2px;
+    color: rgb(73, 71, 71);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons ul li button i{
+    padding: 7px 0px 0px;
+    color: #262626;
+    font-weight: light;
+    font-size: 8px;
+    margin-left: 5px;
+    margin-top: -5px;
+}
+.button1, .button2, .button3, .button4, .button5{
+    margin: 1px -10px 0px 0px;
+    padding: 16px 20px 16px 12px;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button8{
+    margin: 1px 5px 0px 0px;
+    padding: 16px 20px 16px 12px;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right{
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    padding: 0px 1px 0px 2px;
+}
+form{
+    margin: 3px 0px 0px;
+}
+.button7{
+    margin: 0px 6px 1px;
+    padding: 15px 9px 30px;
+    display: flex;
+    height: 45px;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.button7 i{
+    margin: 12px 0px 0px 2px;
+    color: #262626;
+}
+.header3 ul{
+    display: flex;
+}
+.header3 ul li{
+    text-wrap: nowrap;
+    list-style: none;
+}
+.free{
+    height: 31px;
+    background-color: #89C402;
+    margin: 11px 8px 1px;
+    padding: 4px 8px 10px;
+    display: flex;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+}
+.signing{
+    height: 31px;
+    margin: 11px 8px 1px;
+    padding: 4px 8px 10px;
+    display: flex;
+    color: #262626;
+    border: 1px solid #000000;
+    border-radius: 3px;
+}
+.lifree, .lisin{
+    height: 43px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+header button{
+    background: transparent;
+    border: none;
+}
+form button{
+    align-items: center;
+    font-size: 13px;
+    background-color: transparent;
+    border: none;
+}
+form button input{
+    border: none;
+    background-color: transparent;
+}
+.header4{
+    height: 54px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.header4 ul{
+    padding: 0px;
+    height: 54px;
+}
+.header4 ul li{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.Learn{
+    height: 48px;
+    color: #262626;
+    margin: 1px 0px 0px;
+    padding: 16px 8px 10px;
+}
+.support{
+    color: #262626;
+    margin: 1px 4px 0px;
+    padding: 16px 8px 10px;
+    height: 48px;
+}
+.sales{
+    color: #262626;
+    margin: 1px 0px 0px;
+    padding: 16px 8px 10px;
+    height: 48px;
+}
+.Learn, .support, .sales{
+    height: 54px;
+}
+}
+@media screen and (min-width:1254px) and (max-width:1343px){
+header{
+    padding: 0px 5%;
+    margin: 0px 0px 2px;
+}
+.header1{
+    display: none;
+}
+.header1-sub{
+    display:none;
+}
+.li013, .li014{
+    display: none;
+}
+.button6{
+    display: none;
+}
+.button7 span{
+    display: none;
+}
+.header3{
+    display: flex;
+    justify-content: space-between;
+}
+.fstprt{
+    display: flex;
+    justify-content: start;
+}
+.rmng{
+    display: flex;
+    justify-content: space-between;
+    flex:1;
+}
+.logo{
+    width: 137px;
+    margin: 1px 0px 0px;
+    padding: 16px 6px 16px 10px;
+    font-size: 13px;
+}
+.logo img{
+    height: 23px;
+    margin: -3px 0px 0px;
+}
+.gap-div {
+    display: flex;
+    align-items: center;
+}
+.gap-div::before{
+    border-left: 2px solid #000;
+    content: "";
+    height: 24px;
+    margin-left: 7px;
+    position: absolute;
+    top: 15px;
+}
+.gap1{
+    height: 54px;
+    margin: 1px 0px 0px 18px;
+    padding: 16px 6px 16px 10px;
+    display: flex;
+    font-size: 13px;
+    color: #262626;
+}
+.gap1 span{
+    display: block;
+    color: #262626;
+    font-weight: 600;
+    font-size: 17px;
+    /* margin: 1px 0px 0px; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+.icons ul{
+    display: flex;
+    justify-content: left;
+    margin-left: 2px;
+}
+.icons ul li{
+    list-style: none;
+}
+.icons ul li button{
+    display: flex;
+    justify-content: space-between;
+    height: 51px;
+}
+.icons button span{
+    font-size: 13px;
+    font-weight: 2px;
+    color: rgb(73, 71, 71);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons ul li button i{
+    padding: 7px 0px 0px;
+    color: #262626;
+    font-weight: light;
+    font-size: 8px;
+    margin-left: 5px;
+    margin-top: -5px;
+}
+.button1, .button2, .button3, .button4, .button5{
+    margin: 1px -10px 0px 0px;
+    padding: 16px 20px 16px 12px;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button8{
+    margin: 1px 5px 0px 0px;
+    padding: 16px 20px 16px 12px;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .right{
     display: flex;
@@ -276,8 +1059,111 @@ form button input{
     border: 1px solid #000000;
     border-radius: 3px;
 }
+.right{
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    padding: 0px 1px 0px 2px;
 }
-@media screen and (min-width:1083px){
+form{
+    margin: 3px 0px 0px;
+}
+.button7{
+    margin: 0px 6px 1px;
+    padding: 15px 9px 30px;
+    display: flex;
+    height: 45px;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.button7 i{
+    margin: 12px 0px 0px 2px;
+    color: #262626;
+}
+.header3 ul{
+    display: flex;
+}
+.header3 ul li{
+    text-wrap: nowrap;
+    list-style: none;
+}
+.free{
+    height: 31px;
+    background-color: #89C402;
+    margin: 11px 8px 1px;
+    padding: 4px 8px 10px;
+    display: flex;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+}
+.signing{
+    height: 31px;
+    margin: 11px 8px 1px;
+    padding: 4px 8px 10px;
+    display: flex;
+    color: #262626;
+    border: 1px solid #000000;
+    border-radius: 3px;
+}
+.lifree, .lisin{
+    height: 43px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+header button{
+    background: transparent;
+    border: none;
+}
+form button{
+    align-items: center;
+    font-size: 13px;
+    background-color: transparent;
+    border: none;
+}
+form button input{
+    border: none;
+    background-color: transparent;
+}
+.header4{
+    height: 54px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.header4 ul{
+    padding: 0px;
+    height: 54px;
+}
+.header4 ul li{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.Learn{
+    height: 48px;
+    color: #262626;
+    margin: 1px 0px 0px;
+    padding: 16px 8px 10px;
+}
+.support{
+    color: #262626;
+    margin: 1px 4px 0px;
+    padding: 16px 8px 10px;
+    height: 48px;
+}
+.sales{
+    color: #262626;
+    margin: 1px 0px 0px;
+    padding: 16px 8px 10px;
+    height: 48px;
+}
+.Learn, .support, .sales{
+    height: 54px;
+}
+}
+@media screen and (min-width:1344px) and (max-width:1399px){
 header{
     padding: 0px 5%;
     margin: 0px 0px 2px;
@@ -288,16 +1174,460 @@ header{
 .header1-sub{
     display:none;
 }
-.li02{
+.li014{
+    display: none;
+}
+.button6{
+    display: none;
+}
+.button7 span{
     display: none;
 }
 .header3{
     display: flex;
     justify-content: space-between;
 }
-.left {
+.fstprt{
+    display: flex;
+    justify-content: start;
+}
+.rmng{
+    display: flex;
+    justify-content: space-between;
+    flex:1;
+}
+.logo{
+    width: 137px;
+    margin: 1px 0px 0px;
+    padding: 16px 6px 16px 10px;
+    font-size: 13px;
+}
+.logo img{
+    height: 23px;
+    margin: -3px 0px 0px;
+}
+.gap-div {
     display: flex;
     align-items: center;
+}
+.gap-div::before{
+    border-left: 2px solid #000;
+    content: "";
+    height: 24px;
+    margin-left: 7px;
+    position: absolute;
+    top: 15px;
+}
+.gap1{
+    height: 54px;
+    margin: 1px 0px 0px 18px;
+    padding: 16px 6px 16px 10px;
+    display: flex;
+    font-size: 13px;
+    color: #262626;
+}
+.gap1 span{
+    display: block;
+    color: #262626;
+    font-weight: 600;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.icons ul{
+    display: flex;
+    justify-content: left;
+    margin-left: 2px;
+}
+.icons ul li{
+    list-style: none;
+}
+.icons ul li button{
+    display: flex;
+    justify-content: space-between;
+    height: 51px;
+}
+.icons button span{
+    font-size: 13px;
+    font-weight: 2px;
+    color: rgb(73, 71, 71);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons ul li button i{
+    padding: 7px 0px 0px;
+    color: #262626;
+    font-weight: light;
+    font-size: 8px;
+    margin-left: 5px;
+    margin-top: -5px;
+}
+.button1, .button2, .button3, .button4, .button5{
+    margin: 1px -10px 0px 0px;
+    padding: 16px 20px 16px 12px;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button8{
+    margin: 1px 5px 0px 0px;
+    padding: 16px 20px 16px 12px;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right{
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    padding: 0px 1px 0px 2px;
+}
+form{
+    margin: 3px 0px 0px;
+}
+.button7{
+    margin: 0px 6px 1px;
+    padding: 15px 9px 30px;
+    display: flex;
+    height: 45px;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.button7 i{
+    margin: 12px 0px 0px 2px;
+    color: #262626;
+}
+.header3 ul{
+    display: flex;
+}
+.header3 ul li{
+    text-wrap: nowrap;
+    list-style: none;
+}
+.free{
+    height: 31px;
+    background-color: #89C402;
+    margin: 11px 8px 1px;
+    padding: 4px 8px 10px;
+    display: flex;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+}
+.signing{
+    height: 31px;
+    margin: 11px 8px 1px;
+    padding: 4px 8px 10px;
+    display: flex;
+    color: #262626;
+    border: 1px solid #000000;
+    border-radius: 3px;
+}
+.lifree, .lisin{
+    height: 43px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+header button{
+    background: transparent;
+    border: none;
+}
+form button{
+    align-items: center;
+    font-size: 13px;
+    background-color: transparent;
+    border: none;
+}
+form button input{
+    border: none;
+    background-color: transparent;
+}
+.header4{
+    height: 54px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.header4 ul{
+    padding: 0px;
+    height: 54px;
+}
+.header4 ul li{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.Learn{
+    height: 48px;
+    color: #262626;
+    margin: 1px 0px 0px;
+    padding: 16px 8px 10px;
+}
+.support{
+    color: #262626;
+    margin: 1px 4px 0px;
+    padding: 16px 8px 10px;
+    height: 48px;
+}
+.sales{
+    color: #262626;
+    margin: 1px 0px 0px;
+    padding: 16px 8px 10px;
+    height: 48px;
+}
+.Learn, .support, .sales{
+    height: 54px;
+}
+}
+@media screen and (min-width:1400px) and (max-width:1490px){
+header{
+    padding: 0px 5%;
+    margin: 0px 0px 2px;
+}
+.header1{
+    display: none;
+}
+.header1-sub{
+    display:none;
+}
+.li014{
+    display: none;
+}
+.button6{
+    display: none;
+}
+.header3{
+    display: flex;
+    justify-content: space-between;
+}
+.fstprt{
+    display: flex;
+    justify-content: start;
+}
+.rmng{
+    display: flex;
+    justify-content: space-between;
+    flex:1;
+}
+.logo{
+    width: 137px;
+    margin: 1px 0px 0px;
+    padding: 16px 6px 16px 10px;
+    font-size: 13px;
+}
+.logo img{
+    height: 23px;
+    margin: -3px 0px 0px;
+}
+.gap-div {
+    display: flex;
+    align-items: center;
+}
+.gap-div::before{
+    border-left: 2px solid #000;
+    content: "";
+    height: 24px;
+    margin-left: 7px;
+    position: absolute;
+    top: 15px;
+}
+.gap1{
+    height: 54px;
+    margin: 1px 0px 0px 18px;
+    padding: 16px 6px 16px 10px;
+    display: flex;
+    font-size: 13px;
+    color: #262626;
+}
+.gap1 span{
+    display: block;
+    color: #262626;
+    font-weight: 600;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.icons ul{
+    display: flex;
+    justify-content: left;
+    margin-left: 2px;
+}
+.icons ul li{
+    list-style: none;
+}
+.icons ul li button{
+    display: flex;
+    justify-content: space-between;
+    height: 51px;
+}
+.icons button span{
+    font-size: 13px;
+    font-weight: 2px;
+    color: rgb(73, 71, 71);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons ul li button i{
+    padding: 7px 0px 0px;
+    color: #262626;
+    font-weight: light;
+    font-size: 8px;
+    margin-left: 5px;
+    margin-top: -5px;
+}
+.button1, .button2, .button3, .button4, .button5{
+    margin: 1px -10px 0px 0px;
+    padding: 16px 20px 16px 12px;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button8{
+    margin: 1px 5px 0px 0px;
+    padding: 16px 20px 16px 12px;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right{
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    padding: 0px 1px 0px 2px;
+}
+form{
+    margin: 3px 0px 0px;
+}
+.button7{
+    margin: 0px 6px 1px 1px;
+    padding: 15px 9px 30px;
+    display: flex;
+    height: 45px;
+    justify-content: space-between;
+    text-wrap: nowrap;
+}
+.button7 span{
+    position: relative;
+    margin-top: 10px;
+}
+.button7 i{
+    margin: 12px 0px 0px 2px;
+    color: #262626;
+}
+.header3 ul{
+    display: flex;
+}
+.header3 ul li{
+    text-wrap: nowrap;
+    list-style: none;
+}
+.free{
+    height: 31px;
+    background-color: #89C402;
+    margin: 11px 8px 1px;
+    padding: 4px 8px 10px;
+    display: flex;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+}
+.signing{
+    height: 31px;
+    margin: 11px 8px 1px;
+    padding: 4px 8px 10px;
+    display: flex;
+    color: #262626;
+    border: 1px solid #000000;
+    border-radius: 3px;
+}
+.lifree, .lisin{
+    height: 43px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+header button{
+    background: transparent;
+    border: none;
+}
+form button{
+    align-items: center;
+    font-size: 13px;
+    background-color: transparent;
+    border: none;
+}
+form button input{
+    border: none;
+    background-color: transparent;
+}
+.header4{
+    height: 54px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.header4 ul{
+    padding: 0px;
+    height: 54px;
+}
+.header4 ul li{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.Learn{
+    height: 48px;
+    color: #262626;
+    margin: 1px 0px 0px;
+    padding: 16px 8px 10px;
+}
+.support{
+    color: #262626;
+    margin: 1px 4px 0px;
+    padding: 16px 8px 10px;
+    height: 48px;
+}
+.sales{
+    color: #262626;
+    margin: 1px 0px 0px;
+    padding: 16px 8px 10px;
+    height: 48px;
+}
+.Learn, .support, .sales{
+    height: 54px;
+}
+}
+@media screen and (min-width:1491px){
+header{
+    padding: 0px 5%;
+    margin: 0px 0px 2px;
+    /* height: 54px; */
+}
+.header1{
+    display: none;
+}
+.header1-sub{
+    display:none;
+}
+.button6{
+    display: none;
+}
+.header3{
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+}
+.fstprt{
+    display: flex;
+    justify-content: start;
+}
+.li02{
+    display: none;
 }
 .logo{
     width: 137px;
@@ -324,6 +1654,7 @@ header{
     padding: 16px 6px 16px 10px;
     display: flex;
     font-size: 13px;
+    color: #262626;
 }
 .gap1 span{
     display: block;
@@ -333,26 +1664,31 @@ header{
     margin: 1px 0px 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
+.icons{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: auto;
+}
 .icons ul{
-    
     display: flex;
     justify-content: left;
 }
 .icons ul li{
     list-style: none;
+    height: 54px;
 }
 .icons ul li button{
     display: flex;
     justify-content: space-between;
+    gap: 4px;
+    color: #262626;
     height: 51px;
 }
 .icons button span{
     font-size: 13px;
     font-weight: 2px;
     color: rgb(73, 71, 71);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .icons ul li button i{
     padding: 7px 0px 0px;
@@ -360,22 +1696,24 @@ header{
     font-weight: light;
     font-size: 8px;
 }
-.button1, .button2, .button3, .button4, .button5{
-    margin: 1px -6px 0px 0px;
-    padding: 16px 30px 16px 16px;
+.button1, .button2, .button3, .button4, .button5, .button6{
+    margin: 1px -10px 0px 0px;
+    padding: 16px 20px 16px 12px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.button6{
-    margin: 1px 0px 0px;
-    padding: 16px 30px 16px 12px;
-}
 .right{
     display: flex;
     font-size: 13px;
-    align-items: center;
+    align-items: end;
     padding: 0px 1px 0px 2px;
+    height: 54px;
+}
+.rmng{
+    display: flex;
+    justify-content: space-between;
+    flex:1;
 }
 form{
     margin: 3px 0px 0px;
@@ -415,10 +1753,64 @@ header button{
 }
 .right{
     display: flex;
-    color: #000000;
     font-size: 13px;
+    align-items: center;
+    padding: 0px 1px 0px 2px;
+}
+form{
+    margin: 3px 0px 0px;
+}
+.button7{
+    margin: 0px 6px 1px 1px;
+    padding: 15px 9px 30px;
+    display: flex;
+    height: 45px;
+    justify-content: space-between;
+    text-wrap: nowrap;
+}
+.button7 span{
+    position: relative;
+    margin-top: 10px;
+}
+.button7 i{
+    margin: 12px 0px 0px 2px;
+    color: #262626;
+}
+.header3 ul{
+    display: flex;
+}
+.header3 ul li{
+    text-wrap: nowrap;
+    list-style: none;
+}
+.free{
+    height: 31px;
+    background-color: #89C402;
+    margin: 11px 8px 1px;
+    padding: 4px 8px 10px;
+    display: flex;
+    border-radius: 3px;
     justify-content: center;
     align-items: center;
+}
+.signing{
+    height: 31px;
+    margin: 11px 8px 1px;
+    padding: 4px 8px 10px;
+    display: flex;
+    color: #262626;
+    border: 1px solid #000000;
+    border-radius: 3px;
+}
+.lifree, .lisin{
+    height: 43px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+header button{
+    background: transparent;
+    border: none;
 }
 form button{
     align-items: center;
@@ -427,39 +1819,43 @@ form button{
     border: none;
 }
 form button input{
-    
     border: none;
     background-color: transparent;
 }
+.header4{
+    height: 54px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.header4 ul{
+    padding: 0px;
+    height: 54px;
+}
+.header4 ul li{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
 .Learn{
+    height: 48px;
     color: #262626;
-    margin: 1px 4px 0px;
+    margin: 1px 0px 0px;
     padding: 16px 8px 10px;
 }
 .support{
     color: #262626;
     margin: 1px 4px 0px;
     padding: 16px 8px 10px;
+    height: 48px;
 }
 .sales{
     color: #262626;
-    margin: 1px 4px 0px;
+    margin: 1px 0px 0px;
     padding: 16px 8px 10px;
+    height: 48px;
 }
-.signing{
-    color: #262626;
-    margin: 11px 10px 1px;
-    padding: 4px 8px 10px;
-    border: 1px solid #000000;
-    border-radius: 3px;
-}
-}
-@media screen and (min-width: 1440px){
-header{
-    max-width: 1835px;
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-left: auto;
-    margin-right: auto;
+.Learn, .support, .sales{
+    height: 54px;
 }
 }

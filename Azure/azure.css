@@ -301,16 +301,10 @@ form button i{
     color: #17253D;
 }
 .col-left{
-    width: 1328px;
-    height: 388px;
     font-size: 16px;
     color: #17253D;
-}
-.col-left{
     width: 656px;
     height:284px;
-    color: #17253D;
-    font-size: 16px;
 }
 .col-right{
     width: 656px;
