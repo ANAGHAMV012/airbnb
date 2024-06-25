@@ -540,12 +540,12 @@
     position: relative;
     width: 100%;
 }
-.master1{
+.master1, .res-up{
     margin-top: 0.5rem;
     text-transform: uppercase;
     color: #17253d;
 }
-.master1 span{
+.master1 span, .res-up span{
     font-weight: 600;
     font-size:0.75rem;
     line-height: 1rem;
@@ -794,7 +794,7 @@
     line-height: 1rem;
     letter-spacing: 0.08em;
 }
-.res-dwn h2{
+.res-dwn h2, .cs-up-l2 h2{
     font-weight: 600;
     font-size: 1.75rem;
     line-height: 2.25rem;
@@ -908,13 +908,13 @@
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
 }
-.global-container-sub{
+.global-container-sub, .cs-up{
     display: flex;
     flex-wrap: wrap;
     margin-left: -.25rem;
     margin-right: -.25rem;
 }
-.globe{
+.globe, .cs-up-sub{
     padding-left: .25rem;
     padding-right: .25rem;
     flex-basis: 0;
@@ -971,6 +971,29 @@
     padding-bottom: 0.125rem;
     display: block;
     text-align: center;
+}
+.customer-stories{
+    padding: 3rem 0;
+    background-color: #F4FAFD;
+}
+.customer-stories-sub{
+    padding: 0 1rem;
+}
+.cs-dwn{
+    margin-top: 1.5rem;
+}
+.cs-up-sub{
+    display: flex;
+    flex-direction: column;
+    gap:.5rem;
+}
+.cs-up-l1{
+    text-transform: uppercase;
+    margin: 0 0 0.5rem;
+    font-weight: 600;
+    font-size: .75rem;
+    line-height: 1rem;
+    letter-spacing: .08em;
 }
 @media screen and (max-width: 539px){
 .header3, .header2, .slt, .pas, .rbr, .cs{
