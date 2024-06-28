@@ -1146,7 +1146,6 @@ footer{
     display: none;
 }
 .foot{
-    margin: 0 auto;
     background-color: #f2f2f2;
 }
 .foot-sub1 h3{
@@ -1208,7 +1207,6 @@ nav ul li a, nav ul li span{
 }
 .prvy{
     margin: 8px 0 16px;
-    /* width: 100%; */
 }
 .prvy img{
     padding-right: 8px;
@@ -2598,7 +2596,6 @@ form button input{
 .foot{
     display: flex;
     padding: 0 5%;
-    margin: 0 auto;
 }
 .foot-end{
     display: flex;
@@ -2629,7 +2626,6 @@ form button input{
     color: #616161;
     float: left;
     white-space: nowrap;
-    width: 100%;
 }
 .prvy, .conhp{
     display: flex;
@@ -2640,7 +2636,6 @@ form button input{
     color: #616161;
     float: left;
     text-wrap: nowrap;
-    /* align-items: center; */
 }
 .conhp span{
     align-items: center;
@@ -2657,7 +2652,6 @@ nav ul{
 }
 nav ul li{
     padding: 0 24px 4px 0;
-    /* display: inline-block; */
 }
 nav ul li a{
     padding-right: 3px;
@@ -2669,12 +2663,40 @@ nav ul li a{
     vertical-align: text-top;
     padding: 0 12px;
     zoom:1;
+    width: 33.4%;
 }
 .add{
     padding-left: 0;
 }
-.foot ul{
-    max-width: 82%;
+.foot-sub1 ul{
+    margin: 0;
+    font-size: 11px;
+    line-height: 16px;
+}
+.foot-sub1 ul li{
+    padding: 8px 0;
+    margin: 0;
+}
+.foot-end-sub{
+    display: flex;
+    align-items: left;
+}
+.eng{
+    width:auto;
+}
+.prvy{
+    margin:0;
+}
+.eng img{
+    height: 9px;
+    width: 16px;
+}
+nav{
+    height: fit-content;
+}
+.footsubA{
+    display: flex;
+    width: 100%;
 }
 }
 @media screen and (min-width:1173px) and (max-width:1253px){
@@ -2990,11 +3012,11 @@ form button input{
 }
 .foot{
     padding: 0 5%;
-    background-color: #f2f2f2;
-    display: block;
-    margin: 0 auto;
-    max-width: calc(1600px + 10%);
-    box-sizing: border-box;
+    display: flex;
+}
+.footsubA{
+    display:flex;
+    width: 100%;
 }
 .foot-sub1{
     display: block;
@@ -3002,11 +3024,69 @@ form button input{
     min-height: 1px;
     vertical-align: text-top;
     padding: 0 12px;
-    width: 16.6666666667%;
     zoom:1;
 }
 .add{
     padding-left: 0;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+}
+.footsubA{
+    display: flex;
+}
+.foot-end{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.foot-sub1{
+    width: 34%;
+}
+nav ul{
+    display: flex;
+}
+.foot-end-sub{
+    display: flex;
+    flex-direction: row;
+    float: left;
+    justify-content: left;
+    align-items: start;
+}
+.foot-end{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 30px 5% 16px;
+    background-color: #f2f2f2;
+    margin: 0 auto;
+    max-width: calc(1600px + 10%);
+    width: 100%;
+}
+.eng img{
+    width: 16px;
+    height: 9px;
+}
+.prvy{
+    margin: 0;
+}
+nav{
+    display: block;
+}
+nav ul{
+    font-size: 11px;
+    line-height: 16px;
+    float: right;
+    margin: 3px 0;
+    color: #616161;
+}
+nav ul li{
+    padding: 0 24px 4px 0;
+}
+nav ul li a{
+    padding-right: 3px;
 }
 }
 @media screen and (min-width:1254px) and (max-width:1343px){
@@ -3405,11 +3485,11 @@ form button input{
 }
 .foot{
     padding: 0 5%;
-    background-color: #f2f2f2;
-    display: block;
-    margin: 0 auto;
-    max-width: calc(1600px + 10%);
-    box-sizing: border-box;
+    display: flex;
+}
+.footsubA{
+    display:flex;
+    width: 100%;
 }
 .foot-sub1{
     display: block;
@@ -3417,11 +3497,69 @@ form button input{
     min-height: 1px;
     vertical-align: text-top;
     padding: 0 12px;
-    width: 16.6666666667%;
     zoom:1;
 }
 .add{
     padding-left: 0;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+}
+.footsubA{
+    display: flex;
+}
+.foot-end{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.foot-sub1{
+    width: 34%;
+}
+nav ul{
+    display: flex;
+}
+.foot-end-sub{
+    display: flex;
+    flex-direction: row;
+    float: left;
+    justify-content: left;
+    align-items: start;
+}
+.foot-end{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 30px 5% 16px;
+    background-color: #f2f2f2;
+    margin: 0 auto;
+    max-width: calc(1600px + 10%);
+    width: 100%;
+}
+.eng img{
+    width: 16px;
+    height: 9px;
+}
+.prvy{
+    margin: 0;
+}
+nav{
+    display: block;
+}
+nav ul{
+    font-size: 11px;
+    line-height: 16px;
+    float: right;
+    margin: 3px 0;
+    color: #616161;
+}
+nav ul li{
+    padding: 0 24px 4px 0;
+}
+nav ul li a{
+    padding-right: 3px;
 }
 }
 @media screen and (min-width:1344px) and (max-width:1399px){
@@ -3749,11 +3887,11 @@ form button input{
 }
 .foot{
     padding: 0 5%;
-    background-color: #f2f2f2;
-    display: block;
-    margin: 0 auto;
-    max-width: calc(1600px + 10%);
-    box-sizing: border-box;
+    display: flex;
+}
+.footsubA{
+    display:flex;
+    width: 100%;
 }
 .foot-sub1{
     display: block;
@@ -3761,11 +3899,69 @@ form button input{
     min-height: 1px;
     vertical-align: text-top;
     padding: 0 12px;
-    width: 16.6666666667%;
     zoom:1;
 }
 .add{
     padding-left: 0;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+}
+.footsubA{
+    display: flex;
+}
+.foot-end{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.foot-sub1{
+    width: 34%;
+}
+nav ul{
+    display: flex;
+}
+.foot-end-sub{
+    display: flex;
+    flex-direction: row;
+    float: left;
+    justify-content: left;
+    align-items: start;
+}
+.foot-end{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 30px 5% 16px;
+    background-color: #f2f2f2;
+    margin: 0 auto;
+    max-width: calc(1600px + 10%);
+    width: 100%;
+}
+.eng img{
+    width: 16px;
+    height: 9px;
+}
+.prvy{
+    margin: 0;
+}
+nav{
+    display: block;
+}
+nav ul{
+    font-size: 11px;
+    line-height: 16px;
+    float: right;
+    margin: 3px 0;
+    color: #616161;
+}
+nav ul li{
+    padding: 0 24px 4px 0;
+}
+nav ul li a{
+    padding-right: 3px;
 }
 }
 @media screen and (min-width:1400px) and (max-width:1490px){
@@ -4079,14 +4275,6 @@ form button input{
     justify-content: space-between;
     text-wrap: nowrap;
 }
-.foot{
-    padding: 0 5%;
-    background-color: #f2f2f2;
-    display: block;
-    margin: 0 auto;
-    max-width: calc(1600px + 10%);
-    box-sizing: border-box;
-}
 .foot-sub1{
     display: block;
     float: left;
@@ -4096,8 +4284,83 @@ form button input{
     width: 16.6666666667%;
     zoom:1;
 }
+.foot{
+    padding: 0 5%;
+    display: flex;
+}
+.footsubA{
+    display:flex;
+    width: 100%;
+}
+.foot-sub1{
+    display: block;
+    float: left;
+    min-height: 1px;
+    vertical-align: text-top;
+    padding: 0 12px;
+    zoom:1;
+}
 .add{
     padding-left: 0;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+}
+.footsubA{
+    display: flex;
+}
+.foot-end{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.foot-sub1{
+    width: 34%;
+}
+nav ul{
+    display: flex;
+}
+.foot-end-sub{
+    display: flex;
+    flex-direction: row;
+    float: left;
+    justify-content: left;
+    align-items: start;
+}
+.foot-end{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 30px 5% 16px;
+    background-color: #f2f2f2;
+    margin: 0 auto;
+    max-width: calc(1600px + 10%);
+    width: 100%;
+}
+.eng img{
+    width: 16px;
+    height: 9px;
+}
+.prvy{
+    margin: 0;
+}
+nav{
+    display: block;
+}
+nav ul{
+    font-size: 11px;
+    line-height: 16px;
+    float: right;
+    margin: 3px 0;
+    color: #616161;
+}
+nav ul li{
+    padding: 0 24px 4px 0;
+}
+nav ul li a{
+    padding-right: 3px;
 }
 }
 @media screen and (min-width:1491px){
@@ -4391,14 +4654,6 @@ form button input{
 .col-left{
     width: 54.5%;
 }
-.foot{
-    padding: 0 5%;
-    background-color: #f2f2f2;
-    display: block;
-    margin: 0 auto;
-    max-width: calc(1600px + 10%);
-    box-sizing: border-box;
-}
 .foot-sub1{
     display: block;
     float: left;
@@ -4408,8 +4663,83 @@ form button input{
     width: 16.6666666667%;
     zoom:1;
 }
+.foot{
+    padding: 0 5%;
+    display: flex;
+}
+.footsubA{
+    display:flex;
+    width: 100%;
+}
+.foot-sub1{
+    display: block;
+    float: left;
+    min-height: 1px;
+    vertical-align: text-top;
+    padding: 0 12px;
+    zoom:1;
+}
 .add{
     padding-left: 0;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+}
+.footsubA{
+    display: flex;
+}
+.foot-end{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.foot-sub1{
+    width: 34%;
+}
+nav ul{
+    display: flex;
+}
+.foot-end-sub{
+    display: flex;
+    flex-direction: row;
+    float: left;
+    justify-content: left;
+    align-items: start;
+}
+.foot-end{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 30px 5% 16px;
+    background-color: #f2f2f2;
+    margin: 0 auto;
+    max-width: calc(1600px + 10%);
+    width: 100%;
+}
+.eng img{
+    width: 16px;
+    height: 9px;
+}
+.prvy{
+    margin: 0;
+}
+nav{
+    display: block;
+}
+nav ul{
+    font-size: 11px;
+    line-height: 16px;
+    float: right;
+    margin: 3px 0;
+    color: #616161;
+}
+nav ul li{
+    padding: 0 24px 4px 0;
+}
+nav ul li a{
+    padding-right: 3px;
 }
 }
 @media screen and (min-width: 1440px){
@@ -4966,6 +5296,29 @@ nav ul{
 }
 nav ul li{
     padding: 0 24px 4px 0;
+}
+}
+@media screen and (min-width:1098px){
+.foot-end{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.foot-sub1{
+    width: 34%;
+}
+nav ul{
+    display: flex;
+}
+}
+@media screen and (min-width:768px) and (max-width:1083px){
+.foot-end-sub{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+.eng{
+    width:auto;
 }
 }
 @media screen and (min-width:860px) and (max-width:1440px){
