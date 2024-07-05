@@ -327,12 +327,25 @@ section{
     font-size: 16px;
     font-weight: bolder;
 }
+.col2B1 span{
+    width: 331.33px;
+    height: 24px;
+}
 .col2B1 span a{
-    width: 53.64px;
+    width: 331.33px;
     height: 24px;
     color: #2D2E2F;
     font-size: 16px;
     font-weight: bolder;
+}
+.col2B1 .rating{
+    width: 331.33px;
+    height: 28.33px;
+    padding: 4px 0px 8px;
+}
+.col2B1 .rating-sub{
+    width: 88px;
+    height: 16px;
 }
 .col3B span a{
     width: 53.64px;

@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.header{
+    width: 100%;
+    background-image: url(images/o.jpg); 
+    background-size: 100%;
+    position: relative;
+    height: 70.6vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.header img{
+    position: absolute;
+    top: 0vh;
+    height: 400px;
+}
