@@ -4,53 +4,540 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurants, Dentists, Bars, Beauty Salons, Doctors - Yelp</title>
-    <link rel="stylesheet" href="yelp.css">
+    <link rel="stylesheet" href="yelpnew.css">
     <link rel="icon" href="images/yelp-icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
     <body>
-        <div class="header">
-            <div class="nav">
+        <div class="nav">
+            <div class="navmid-sub">
                 <div class="logo">
-                    <img src="images/YELP-logo.png" alt="">
+                    <div class="logo-sub"></div>
                 </div>
-                <div class="nav-mid">
-                    <input type="text" id="description" placeholder="things to do, nail salons, plumbers">
-                    <input type="text" id="location" placeholder="San Francisco, CA">
-                    <button>
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
+                <div class="san">
+                    <div class="sansub">
+                        <form action="">
+                            <div class="form">
+                                <input type="text" id="description" placeholder="things to do, nail salons, plumbers">
+                            </div>
+                            <div class="form">
+                                <input type="text" id="location" placeholder="San Francisco, CA">
+                            </div>
+                            <div class="form2">
+                                <button>
+                                    <span>
+                                        <svg width="24" height="24" class="icon_svg"><path d="m21.853 20.355-3.444-3.443a9.428 9.428 0 1 0-16.761-6.171 9.428 9.428 0 0 0 15.348 7.586l3.443 3.442a1 1 0 1 0 1.414-1.414ZM5.82 16.245a7.429 7.429 0 1 1 5.253 2.175 7.38 7.38 0 0 1-5.253-2.176Z"></path></svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
                 <div class="sign">
                     <div class="sign-sub">
-                        <select>
-                            <h6>Yelp for Business</h6>
-                        </select>
-                        <div class="review">
-                            <h6>Write a review</h6>
-                        </div>
-                        <button class="login">
-                            <span>Log In</span>
-                        </button>
-                        <button class="signup">
-                            <span>Sign Up</span>
-                        </button>
+                        <span class="business">
+                            <button>
+                                <div class="busy">
+                                    <span class="busi">Yelp for Business</span>
+                                    <span class="todwn">
+                                        <svg width="16" height="16" class="icon_svg"><path d="M8 10.25a.746.746 0 0 1-.525-.215l-3.055-3a.75.75 0 0 1 1.05-1.07L8 8.449l2.53-2.484a.75.75 0 0 1 1.05 1.07l-3.055 3A.746.746 0 0 1 8 10.25Z"></path></svg>
+                                    </span>
+                                </div>
+                            </button>
+                        </span>
+                        <span class="review">
+                            <a href="">
+                                <div class="rev-sub">
+                                    <h6>Write a Review</h6>
+                                </div>
+                            </a>
+                        </span>
+                        <span class="right-sgn">
+                            <button class="login">
+                                <span>Log In</span>
+                            </button>
+                            <div class="signup">
+                                <button>
+                                    <span>Sign Up</span>
+                                </button>
+                            </div>
+                        </span>
                     </div>
                 </div>
             </div>
+            <div class="navmid-dwn">
+                <div class="nav-dwn-sub">
+                    <div class="nav-dwndwn">
+                        <div class="restau">
+                            <a href="">
+                                <span class="rtxt">Restaurants</span>
+                                <span>
+                                    <svg width="24" height="24" fill="#fff" class="icon_svg"><path d="M12 15.25a1 1 0 0 1-.7-.29l-4.58-4.5A1.011 1.011 0 0 1 8.12 9L12 12.85 15.88 9a1 1 0 1 1 1.4 1.42L12.7 15a1 1 0 0 1-.7.25Z"></path></svg>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="restau">
+                            <a href="">
+                                <span class="rtxt">Home Services</span>
+                                <span>
+                                    <svg width="24" height="24" fill="#fff" class="icon_svg"><path d="M12 15.25a1 1 0 0 1-.7-.29l-4.58-4.5A1.011 1.011 0 0 1 8.12 9L12 12.85 15.88 9a1 1 0 1 1 1.4 1.42L12.7 15a1 1 0 0 1-.7.25Z"></path></svg>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="restau ">
+                            <a href="">
+                                <span class="rtxt">Auto Services</span>
+                                <span>
+                                    <svg width="24" height="24" fill="#fff" class="icon_svg"><path d="M12 15.25a1 1 0 0 1-.7-.29l-4.58-4.5A1.011 1.011 0 0 1 8.12 9L12 12.85 15.88 9a1 1 0 1 1 1.4 1.42L12.7 15a1 1 0 0 1-.7.25Z"></path></svg>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="restau">
+                            <a href="">
+                                <span class="rtxt">More</span>
+                                <span>
+                                    <svg width="24" height="24" fill="#fff" class="icon_svg"><path d="M12 15.25a1 1 0 0 1-.7-.29l-4.58-4.5A1.011 1.011 0 0 1 8.12 9L12 12.85 15.88 9a1 1 0 1 1 1.4 1.42L12.7 15a1 1 0 0 1-.7.25Z"></path></svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header">
+            <div class="banner"></div>
             <div class="content">
                 <div class="content-sub">
-                    <div class="content1">
-                        <h1>Show off your lawn this spring</h1>
-                        <button>
-                            <i class="fa-solid fa-magnifying-glass"></i> <span>Landscapes</span>
-                        </button>
+                        <div class="content1">
+                            <div class="con1">
+                                <div class="con"></div>
+                                <div class="con"></div>
+                                <div class="con"></div>
+                                <div class="con"></div>
+                                <div class="pause">
+                                    <button>
+                                        <span>
+                                            <svg width="16" height="16" class="icon_svg"><path d="M8 14.75A6.75 6.75 0 1 1 14.75 8 6.758 6.758 0 0 1 8 14.75Zm0-12A5.25 5.25 0 1 0 13.25 8 5.256 5.256 0 0 0 8 2.75Z"></path><path d="m10.506 7.603-3.5-2.674a.5.5 0 0 0-.804.397v5.348a.5.5 0 0 0 .804.397l3.5-2.674a.5.5 0 0 0 0-.794Z"></path></svg>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="con2">
+                                <div class="hedng">
+                                    <h1>Taste the crunch</h1>
+                                </div>
+                                <a href="" class="bot">
+                                    <div class="iconcon">
+                                        <svg width="24" height="24" class="icon_svg"><path d="m21.853 20.355-3.444-3.443a9.428 9.428 0 1 0-16.761-6.171 9.428 9.428 0 0 0 15.348 7.586l3.443 3.442a1 1 0 1 0 1.414-1.414ZM5.82 16.245a7.429 7.429 0 1 1 5.253 2.175 7.38 7.38 0 0 1-5.253-2.176Z"></path></svg>
+                                    </div>
+                                    <div class="fried">
+                                        <span>Fried chicken</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content2">
+                            <div class="cont2sub">
+                                <p class="nat">Le Coupe</p>
+                                <p class="own">Photo from the business owner</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <section>
+            <div class="section">
+                <div class="section-sub">
+                    <div class="recent">
+                        <h2>Recent Activity</h2>
                     </div>
-                    <div class="content2">
-                        <a href="" id="nat">Nature's Friends Landscaping</a>
-                        <a href="" id="own">Photo from the business owner</a>
+                    <div class="box">
+                            <div class="col1">
+                                <div class="col1-sub">
+                                    <div class="col1A">
+                                        <div class="col1A-sub">
+                                            <img src="images/60s (2).jpg" alt="">
+                                            <span>
+                                                <p>Min C. added a photo</p>
+                                                <p>1 minutes ago</p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col1B">
+                                        <div class="col1B1">
+                                            <span><a href="">Purtea</a></span>
+                                            <div class="rating">
+                                                <div class="rating-sub">
+                                                    <img src="images/download (3).svg" alt="">
+                                                    <img src="images/download (3).svg" alt="">
+                                                    <img src="images/download (3).svg" alt="">
+                                                    <img src="images/download (3).svg" alt="">
+                                                    <img src="images/download (4).svg" alt="">
+                                                    <span>49</span>
+                                                </div>
+                                            </div>
+                                            <p>Bubble Tea, Coffee & Tea, Asian Fusion</p>
+                                            <div class="bubble-tea">
+                                                <img src="images/l (9).jpg" alt="">
+                                            </div>
+                                            <div class="like-sub">
+                                                <div class="like-icon">
+                                                    <div class="like-txt">
+                                                        <img src="images/download.svg" alt="">
+                                                        <span>1 like</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col1">
+                                <div class="col1-sub">
+                                    <div class="col2A">
+                                        <div class="col1A-sub">
+                                            <img src="images/120s.jpg" alt="">
+                                            <span>
+                                                <p>Sherry B. wrote a review</p>
+                                                <p>5 minutes ago</p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col1B">
+                                        <div class="korean-tea">
+                                            <img src="images/l (20).jpg" alt="">
+                                        </div>
+                                        <div class="col2B1">
+                                            <span><a href="">Koreana Plaza Market</a></span>
+                                            <div class="rating">
+                                                <div class="rating-sub">
+                                                    <img src="images/download (3).svg" alt="">
+                                                    <img src="images/download (3).svg" alt="">
+                                                    <img src="images/download (3).svg" alt="">
+                                                    <img src="images/download (3).svg" alt="">
+                                                    <img src="images/download (5).svg" alt="">
+                                                </div>
+                                            </div>
+                                            <p>This place is solid! I ordered takeout from here recently and tried a bunch
+                                                of item.</p>
+                                            <div class="like-sub">
+                                                <div class="like-icon">
+                                                    <div class="like-txt">
+                                                        <img src="images/download.svg" alt="">
+                                                        <span>1 like</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col2C"></div>
+                                </div>
+                            </div>
+                            <div class="col1">
+                                <div class="col1-sub">
+                                    <div class="col3A">
+                                        <div class="col1A-sub">
+                                            <img src="images/60s (3).jpg" alt="">
+                                            <span>
+                                                <p>Alice S. added a photo</p>
+                                                <p>46 minutes ago</p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col3B">
+                                        <span><a href="">Udon Mugizo</a></span>
+                                        <div class="rating">
+                                            <div class="rating-sub">
+                                                <img src="images/download (3).svg" alt="">
+                                                <img src="images/download (3).svg" alt="">
+                                                <img src="images/download (3).svg" alt="">
+                                                <img src="images/download (3).svg" alt="">
+                                                <img src="images/download (5).svg" alt="">
+                                            </div>
+                                            <span>1787</span>
+                                        </div>
+                                        <p>$$ . Japanese, Noodles</p>
+                                        <div class="noodles">
+                                            <img src="images/l (10).jpg" alt="">
+                                        </div>
+                                        <div class="col3D">
+                                            <div class="like-icon">
+                                                <div class="like-txt">
+                                                    <img src="images/download.svg" alt="">
+                                                    <span>1 like</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col1">
+                                <div class="col1-sub">
+                                    <div class="col1A">
+                                        <div class="col1A-sub">
+                                            <img src="images/60s (4).jpg" alt="">
+                                            <span>
+                                                <p>Jimmy S. wrote a review</p>
+                                                <p>50 minutes ago</p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="korean-tea">
+                                        <img src="images/l (12).jpg" alt="">
+                                    </div>
+                                    <div class="col1C">
+    
+                                    </div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div class="col1">
+                                <div class="col1-sub">
+                                    <div class="col2A">
+                                        <div class="col1A-sub">
+                                            <img src="images/60s (5).jpg" alt="">
+                                            <span>
+                                                <p>Paolo B. wrote a review</p>
+                                                <p>53 minutes ago</p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="bubble-tea">
+                                        <img src="images/l (11).jpg" alt="">
+                                    </div>
+                                    <div class="col2C"></div>
+                                </div>
+                            </div>
+                            <div class="col1">
+                                <div class="col1-sub">
+                                    <div class="col3A">
+                                        <div class="col1A-sub">
+                                            <img src="images/60s (6).jpg" alt="">
+                                            <span>
+                                                <p>Charlie A. added a photo</p>
+                                                <p>1 hour ago</p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="noodles">
+                                        <img src="images/o (1).jpg" alt="">
+                                    </div>
+                                    <div class="col3C"></div>
+                                </div>
+                            </div>
+                            <div class="col1">
+                                <div class="col1-sub">
+                                    <div class="col1A">
+                                        <div class="col1A-sub">
+                                            <img src="images/60s (7).jpg" alt="">
+                                            <span>
+                                                <p>Amir J. added 3 photos</p>
+                                                <p>2 hours ago</p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="bubble-tea">
+                                        <img src="images/l (13).jpg" alt="">
+                                    </div>
+                                    <div class="col1C"></div>
+                                </div>
+                            </div>
+                            <div class="col1">
+                                <div class="col1-sub">
+                                    <div class="col2A">
+                                        <div class="col1A-sub">
+                                            <img src="images/60s (8).jpg" alt="">
+                                            <span>
+                                                <p>Connie C. wrote a review</p>
+                                                <p>2 hours ago</p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="korean-tea">
+                                        <img src="images/l (14).jpg" alt="">
+                                    </div>
+                                    <div class="col2C"></div>
+                                </div>
+                            </div>
+                            <div class="col1">
+                                <div class="col1-sub">
+                                    <div class="col3A">
+                                        <div class="col1A-sub">
+                                            <img src="images/60s (9).jpg" alt="">
+                                            <span>
+                                                <p>Alden C. added a photo</p>
+                                                <p>2 hours ago</p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="noodles">
+                                        <img src="images/l (15).jpg" alt="">
+                                    </div>
+                                    <div class="col3C"></div>
+                                </div>
+                            </div>
+                            <div class="col1">
+                                <div class="col1-sub">
+                                    <div class="col1A">
+                                        <div class="col1A-sub">
+                                            <img src="images/60s (10).jpg" alt="">
+                                            <span>
+                                                <p>Moo C. wrote a review</p>
+                                                <p>2 hours ago</p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="noodles">
+                                        <img src="images/l (16).jpg" alt="">
+                                    </div>
+                                    <div class="col1C"></div>
+                                </div>
+                            </div>
+                            <div class="col1">
+                                <div class="col1-sub">
+                                    <div class="col2A">
+                                        <div class="col1A-sub">
+                                            <img src="images/60s (11).jpg" alt="">
+                                            <span>
+                                                <p>Mia R. wrote a review</p>
+                                                <p>2 hours ago</p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="korean-tea">
+                                        <img src="images/l (19).jpg" alt="">
+                                    </div>
+                                    <div class="col2C">
+                                        <span><a href="">Sun Maxim's</a></span>
+                                        <div class="rating">
+                                            <div class="rating-sub">
+                                                <img src="images/download (3).svg" alt="">
+                                                <img src="images/download (3).svg" alt="">
+                                                <img src="images/download (3).svg" alt="">
+                                                <img src="images/download (3).svg" alt="">
+                                                <img src="images/download (5).svg" alt="">
+                                            </div>
+                                        </div>
+                                        <p>This place is solid! I ordered takeout from here recently and tried a bunch of item.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col1">
+                                <div class="col1-sub">
+                                    <div class="col3A">
+                                        <div class="col1A-sub">
+                                            <img src="images/60s (12).jpg" alt="">
+                                            <span>
+                                                <p>Zew Z. wrote a review</p>
+                                                <p>2 hours ago</p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="bubble-tea">
+                                        <img src="images/l (17).jpg" alt="">
+                                    </div>
+                                    <div class="col3C"></div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="show-more">
+                        <a href="">
+                            <svg width="24" height="24" class="icon_svg"><path d="M12 15.25a1 1 0 0 1-.7-.29l-4.58-4.5A1.011 1.011 0 0 1 8.12 9L12 12.85 15.88 9a1 1 0 1 1 1.4 1.42L12.7 15a1 1 0 0 1-.7.25Z"></path></svg>
+                            <span>Show more activity</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="categories">
+            <div class="categories-sub">
+                <div class="cat-sub">
+                    <div class="cat-head">
+                        <h2>Categories</h2>
+                    </div>
+                    <div class="cat-cont">
+                            <div class="box1">
+                                <div class="box1-sub">
+                                    <div class="box1-rep">
+                                        <div class="box-icon">
+                                            <img src="images/40x40_food_v2.svg" alt="">
+                                        </div>
+                                        <span>Restaurants</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="box1-sub">
+                                    <div class="box1-rep">
+                                        <div class="box-icon">
+                                            <img src="images/40x40_gift_shops_v2.svg" alt="">
+                                        </div>
+                                        <span>Shopping</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="box1-sub">
+                                    <div class="box1-rep">
+                                        <div class="box-icon">
+                                            <img src="images/40x40_new_v2.svg" alt="">
+                                        </div>
+                                        <span>Nightlife</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="box1-sub">
+                                    <div class="box1-rep">
+                                        <div class="box-icon">
+                                            <img src="images/40x40_set_objective_v2.svg" alt="">
+                                        </div>
+                                        <span>Active Life</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="box1-sub">
+                                    <div class="box1-rep">
+                                        <div class="box-icon">
+                                            <img src="images/40x40_barbers_v2.svg" alt="">
+                                        </div>
+                                        <span>Beauty & Spas</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="box1-sub">
+                                    <div class="box1-rep">
+                                        <div class="box-icon">
+                                            <img src="images/40x40_auto_v2.svg" alt="">
+                                        </div>
+                                        <span>Automotive</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="box1-sub">
+                                    <div class="box1-rep">
+                                        <div class="box-icon">
+                                            <img src="images/40x40_home_services_v2.svg" alt="">
+                                        </div>
+                                        <span>Home Services</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="box1-sub">
+                                    <div class="box1-rep">
+                                        <div class="box-icon">
+                                            <img src="images/40x40_more_v2.yji-961fdce2fd036f85fb01.svg" alt="">
+                                        </div>
+                                        <span>More</span>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
                 </div>
             </div>
