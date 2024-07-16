@@ -1,35 +1,22 @@
 let myLeads = []
-let oldLeads = []
 const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn")
 const ulEl = document.getElementById("ul-el")
 const deleteBtn = document.getElementById("delete-btn")
 const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
 const tabBtn = document.getElementById("tab-btn")
-// let name = localStorage.getItem("myName")
-// let name = localStorage.getItem("myName")
-// console.log(name)
-// localStorage.clear()
-// console.log(leadsFromLocalStorage)
 
 if (leadsFromLocalStorage){
     myLeads = leadsFromLocalStorage
     render(myLeads)
 }
 
-const tabs = [
-    {url: "https://www.linkedin.com/in/per-harald-borgen/"}
-]
-
 tabBtn.addEventListener("click", function(){
-    // console.log(tabs[0].url)
-    this.compareDocumentPosition.tabs.query({active:true, currentWindow: true}, function(tabs){
-        let activeTab = tabs[0]
-        let activeTabId = activeTab.id
+    chrome.tabs.query({active:true, currentWindow: true}, function(tabs){
+        myLeads.push(tabs[0].url)
+        localStorage.setItem("myLeads", JSON.stringify(myLeads))
+        render(myLeads)
     })
-    myLeads.push(tabs[0].url)
-    localStorage.setItem("myLeads", JSON.stringify(myLeads))
-    render(myLeads)
 })
 
 function render(leads){
@@ -56,6 +43,4 @@ inputBtn.addEventListener("click", function(){
     inputEl.value = ""
     localStorage.setItem("myLeads", JSON.stringify(myLeads))
     render(myLeads)
-    // console.log(localStorage.getItem("myLeads", JSON.stringify(myLeads)))
-
 })
