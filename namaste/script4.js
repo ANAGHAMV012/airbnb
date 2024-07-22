@@ -7,13 +7,13 @@ const calculateArea = function (radius) {
     return output;
 };
 
-const calculateArea = function (radius) {
-    const output = [];
-    for (let i = 0; i< radius.length; i++) {
-        output.push(Math.PI * radius[i] * radius[i]);
-    }
-    return output;
-};
+// const calculateArea = function (radius) {
+//     const output = [];
+//     for (let i = 0; i< radius.length; i++) {
+//         output.push(Math.PI * radius[i] * radius[i]);
+//     }
+//     return output;
+// };
 
 console.log(calculateArea(radius));
 const calculateCircumference = function (radius) {
@@ -25,6 +25,7 @@ const calculateCircumference = function (radius) {
 };
 
 console.log(calculateCircumference(radius));
+
 const calculateDiameter = function (radius) {
     const output = [];
     for (let i = 0; i< radius.lenth; i++) {
@@ -33,31 +34,3 @@ const calculateDiameter = function (radius) {
     return output;
 };
 console.log(calculateDiameter(radius))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                   
