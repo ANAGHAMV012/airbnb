@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: helvetica;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #333;
+}
+.split{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+.split.left{
+    left: 0;
+    background: url(ps.jpg);
+    background-repeat: no-repeat;
+}
+.split.left::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}
+.split.right{
+    right: 0;
+    background-repeat: no-repeat;
+    background: url(xbox.jpg);
+    background-size: cover;
+}
+.split::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}
+.hover-left .left {
+    width: 75%;
+}
+.hover-left .right{
+    width: 25%;
+}
