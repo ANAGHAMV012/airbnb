@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Single Click Keyboard</title>
+    </head>
+    <body>
+        <div class="main-cont">
+            <input type="text" id="textbox">
+            <div class="container">
+                <div class="row">
+                    <!-- <span id="clear" class="key">Backspace</span> -->
+                    <span id="clear" class="key">Backspace</span>
+
+                    <span id="space" class="key"></span>
+                    <span id="enter" class="key">Enter</span>
+                </div>
+                <div class="row">
+                    <div id="one" class="key">1</div>
+                    <div id="two" class="key">2</div>
+                    <div id="three" class="key">3</div>
+                    <div id="four" class="key">4</div>
+                    <div id="five" class="key">5</div>
+                    <div id="six" class="key">6</div>
+                    <div id="seven" class="key">7</div>
+                    <div id="eight" class="key">8</div>
+                    <div id="nine" class="key">9</div>
+                    <div id="zero" class="key">0</div>
+                </div>
+                <div class="row">
+                    <div id="q" class="key">q</div>
+                    <div id="w" class="key">w</div>
+                    <div id="e" class="key">e</div>
+                    <div id="r" class="key">r</div>
+                    <div id="t" class="key">t</div>
+                    <div id="y" class="key">y</div>
+                    <div id="u" class="key">u</div>
+                    <div id="i" class="key">i</div>
+                    <div id="o" class="key">o</div>
+                    <div id="p" class="key">p</div>
+                </div>
+                <div class="row">
+                    <div id="a" class="key">a</div>
+                    <div id="s" class="key">s</div>
+                    <div id="d" class="key">d</div>
+                    <div id="f" class="key">f</div>
+                    <div id="g" class="key">g</div>
+                    <div id="h" class="key">h</div>
+                    <div id="j" class="key">j</div>
+                    <div id="k" class="key">k</div>
+                    <div id="l" class="key">l</div>
+                </div>
+                <div class="row">
+                    <div id="z" class="key">z</div>
+                    <div id="x" class="key">x</div>
+                    <div id="c" class="key">c</div>
+                    <div id="v" class="key">v</div>
+                    <div id="b" class="key">b</div>
+                    <div id="n" class="key">n</div>
+                    <div id="m" class="key">m</div>
+                </div>
+                <div class="row">
+                    <div id="exc" class="key">!</div>
+                    <div id="at" class="key">@</div>
+                    <div id="hash" class="key">#</div>
+                    <div id="dollar" class="key">$</div>
+                    <div id="perc" class="key">%</div>
+                    <div id="amper" class="key">&</div>
+                    <div id="and" class="key">^</div>
+                </div>
+                <div class="row">
+                    <div id="plus" class="key">+</div>
+                    <div id="minus" class="key">-</div>
+                    <div id="mult" class="key">*</div>
+                    <div id="div" class="key">/</div>
+                    <div id="dot" class="key">.</div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="selectButton">SELECT</button>
+                <div id="speedControl">
+                    <label for="speed">SPEED</label>
+                    <input type="range" id="speed" min="100" max="2000" value="1000" step="100">
+                </div>
+                <div id="output"></div>
+            </div>
+        </div>
+    </body>
+    <style>
+        *{
+        box-sizing: border-box;
+        }
+        @media screen and (min-width: 650px){
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: end;
+            padding: 0 20px;
+            margin: 0;
+            gap: 10px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .main-cont{
+            height: 100%;
+        }
+        .container{
+            width: 100%;
+            height: 70%;
+            background-color: rgb(57, 55, 55);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            border-radius: 5px;
+            padding: 20px;
+        }
+        #selectButton{
+            height: 65px;
+            width: 100%;
+            background-color: green;
+            color: #fff;
+            font-family: helvetica;
+            font-size: 200px;
+            border: none;
+            border-radius: 5px;
+        }
+        #textbox{
+            height: 20%;
+        }
+        .row{
+            height: 80px;
+            font-family: helvetica;
+            font-weight: bolder;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            align-items: center;
+        }
+        .row div{
+            background-color: rgb(11, 10, 10);
+            background: linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.5) 10%,
+            rgba(255, 255, 255, 0) 10%,
+            rgba(255, 255, 255, 0.5) 10%
+            );
+            gap: 10px;
+            color: white;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+        #space{
+            /* max-width: 320px; */
+            width: 300px;
+            height: 55px;
+            border-radius: 4px;
+            background-color: rgb(11, 10, 10);
+            background: linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.5) 10%,
+            rgba(255, 255, 255, 0) 10%,
+            rgba(255, 255, 255, 0.5) 10%
+            );
+            gap: 10px;
+            color: white;
+        }
+        #clear, #enter{
+            /* max-width: 160px; */
+            height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            /* padding: 10px; */
+            font-size: large;
+            width: 102px;
+        }
+        .row span{
+            background-color: rgb(11, 10, 10);
+            background: linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.5) 10%,
+            rgba(255, 255, 255, 0) 10%,
+            rgba(255, 255, 255, 0.5) 10%
+            );
+            gap: 10px;
+            color: white;
+        }
+        input{
+            width:100%;
+            height: 88%;
+            margin-bottom: 4px;
+            display: inline-block;
+            text-wrap: wrap;
+            font-size: 40px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+        #keyboard {
+            display: grid;
+            grid-template-rows: repeat(4, 50px);
+            grid-gap: 10px;
+        }
+        .row {
+            display: flex;
+            /* justify-content: space-between; */
+        }
+        .key.active {
+            background-color: #fff;
+            color: #000;
+            border: 3px solid;
+            border-color: red;
+        }
+        #selectButton {
+            margin-top: 2px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #output {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+        #speedControl {
+            width: 100%;
+            padding: 10px;
+            background-color: #eee;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .buttons{
+            display: flex;
+            flex: 1;
+        }
+        }
+    </style>
+    <script>
+         const textBox = document.getElementById('textbox');
+        const speedControl = document.getElementById('speed');
+        let currentRow = 0;
+        let currentCol = 0;
+        let selectingRow = true;
+        const rows = document.querySelectorAll('.row');
+        const output = document.getElementById('output');
+        const selectButton = document.getElementById('selectButton');
+        let speed = speedControl.value;
+        let autoScrollInterval;
+        const back = document.getElementById('clear');
+        const space = document.getElementById('space');
+        const enter = document.getElementById('enter');
+        const keys = document.querySelectorAll('.key');
+        let pauseAfterSelection = false;
+
+        function highlightCurrent() {
+            document.querySelectorAll('.key').forEach(key => key.classList.remove('active'));
+
+            if (selectingRow) {
+                const rowKeys = rows[currentRow].querySelectorAll('.key');
+                rowKeys.forEach(key => key.classList.add('active'));
+            } else {
+                const columns = rows[currentRow].querySelectorAll('.key');
+                columns[currentCol].classList.add('active');
+            }
+        }
+
+        function moveToNext() {
+            if (pauseAfterSelection && currentRow === 0) {
+                setTimeout(() => {
+                    pauseAfterSelection = false;
+                    moveToNext(); // Continue scrolling after the pause
+                }, 1000); // Pause for 1 second on the first row
+                return; // Skip the moveToNext execution until the pause is done
+            }
+            if (selectingRow) {
+                currentRow = (currentRow + 1) % rows.length;
+                currentCol = 0;
+            } else {
+                const columns = rows[currentRow].querySelectorAll('.key');
+                currentCol = (currentCol + 1) % columns.length;
+            }
+            highlightCurrent();
+        }
+
+        function handleClick(key) {
+            if (clickCount === 1) {
+                // Single click action (handled in selectCurrent)
+                selectCurrent(key);
+            } else if (clickCount === 2) {
+                // Double click: Keep the key active
+                // No additional action needed here; just maintain state
+            } else if (clickCount === 3) {
+                // Triple click: Repeat the key input
+                const selectedKey = key.textContent;
+                textBox.value += selectedKey;
+                clickCount = 0; // Reset click count
+            }
+        }
+
+        function selectCurrent() {
+            if (!selectingRow) {
+                const selectedKey = rows[currentRow].querySelectorAll('.key')[currentCol].textContent;
+                
+                switch (selectedKey) {
+                    case 'Backspace':
+                        textBox.value = textBox.value.slice(0, -1); // Remove last character
+                        break;
+                    case 'Space':
+                        textBox.value += ' '; // Add space
+                        break;
+                    case 'Enter':
+                        textBox.value += '\n'; // Add new line
+                        break;
+                    default:
+                        textBox.value += selectedKey; // Add character
+                        break;
+                }
+                
+                currentCol = 0;
+                currentRow = 6;
+            }
+            selectingRow = !selectingRow;
+            highlightCurrent();
+        }
+
+        function updateSpeed() {
+            speed = speedControl.value;
+            clearInterval(autoScrollInterval);
+            autoScroll();
+        }
+
+        function autoScroll() {
+            autoScrollInterval = setInterval(moveToNext, speed);
+        }
+
+        // Event listeners
+        speedControl.addEventListener('input', updateSpeed);
+        selectButton.addEventListener('click', selectCurrent);
+
+        // Initialize
+        highlightCurrent();
+        autoScroll();
+    </script>
+</html>
