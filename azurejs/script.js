@@ -1,5 +1,5 @@
 const azure = {
-    title: "Video Conferencing, Meetings, Calling | Microsoft Teams",
+    title: "Cloud Computing Services | Microsoft Azure",
     nav: {
         menu: "images/menu.png",
         sear: "Search",
@@ -11,11 +11,11 @@ const azure = {
         arrow: "icons/down-arrow.png",
         features: [
             {
-            title: "<span>Explore</span>",
+            title: "Explore",
             icon: "icons/arrow-down.svg"
             },
             {
-            title: "<span>Products</span>",
+            title: "Products",
             icon: "icons/arrow-down.svg"
             },
             {
@@ -37,19 +37,24 @@ const azure = {
         ],
         lists: [
             {
-            title: "Learn"
+            title: "Learn",
+            link: "https://learn.microsoft.com/en-gb/azure/?product=popular"
             },
             {
-            title: "Support"
+            title: "Support",
+            link: "https://azure.microsoft.com/en-in/support/"
             },
             {
-            title: "Contact Sales"
+            title: "Contact Sales",
+            link: "https://azure.microsoft.com/en-in/contact",
             },
             {
-            title: "Get started with Azure"
+            title: "Get started with Azure",
+            link: "https://azure.microsoft.com/en-in/pricing/purchase-options/azure-account"
             },
             {
-            title: "Sign in"
+            title: "Sign in",
+            link: "https://login.microsoftonline.com/organizations/oauth2/v2.0/authorize?redirect_uri=https%3A%2F%2Fportal.azure.com%2Fsignin%2Findex%2F&response_type=code%20id_token&scope=https%3A%2F%2Fmanagement.core.windows.net%2F%2Fuser_impersonation%20openid%20email%20profile&state=OpenIdConnect.AuthenticationProperties%3D5TTE8v_3n9dL-hxiAcAGM3pSIMTjHFNhlZzP7j9hdI2VjDs0zv1Pb9rM3xLtODCps0H0W55WIKkkL3fpwvpnbSpdwmpD4j4xyIwq-mzIZwECdxZHiDlKOos5R0lM5jqWNB2ss6tOvuxRjvs_8h6vTSAtxJfnQob9hnYvuHMtwlA47yJPrLcVlMogON9Y5QhdvqA1ih_TQMMzQpkwIJpKF4pGfJ3jNzTGBWoUD6EjkL-kctoJnjBlDOhed-BWVTrDDBzHDqEQXY9s4dmjLtni3Qs-IIZWPqxWG5mimgt_gyjG3PfdZmwGfBF4OPTDGEdkLWWborT50LuzHUP7X2ceWF5YwUeOYSdIiXUzWpMMkMf6O5KsoMEZopj7WxytQahulrIPmksdzDAs3cQ-mDX--QRlSNHXCfHphQpxuc6qkTs60BsxwtXVFa55u3voza_U-wlDCn83-nbd8Hzdm0-xptqTSXkFcFLzF2w8XuUAlRI&response_mode=form_post&nonce=638627630194208878.MWU2ZTQxNzEtYmE4My00Njg1LThiODItNGFkZjk4Y2UwYWRlMjIwY2U2YmMtNTNjYS00NjZkLTkwNjctMDMyZTA1YzNjMmM1&client_id=c44b4083-3bb0-49c1-b47d-974e53cbdf3c&site_id=501430&client-request-id=4b69aa4f-3454-49d7-b69a-da8a757eea49&x-client-SKU=ID_NET472&x-client-ver=7.5.0.0"
             }
         ],
         explore: [
@@ -78,18 +83,97 @@ const azure = {
             links: "https://azure.microsoft.com/en-in/explore/innovation-insights/"
             }
         ],
+        pricing: [
+            {
+                title: "How to buy",
+                sub: [
+                    "Azure pricing",
+                    "Free Azure services",
+                    "Azure account",
+                    "Flexible purchase options",
+                    "Azure benefits and incentives"
+                ]
+            },
+            {
+                title: "Pricing tools and resources",
+                sub: [
+                    "Pricing calculator",
+                    "TCO calculator",
+                    "Optimize your costs",
+                    "FinOps on Azure"
+                ]
+            }
+        ]
     },
     banner: {
-        backgroundimage: "images/Mobile-bg.avif",
-        backgroundImage1: "images/Mobile-hero-background@2x1.webp",
+        backgroundimage: "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/ACOM-hp-september-Desktop-HeroSlim-BG?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=3200&hei=1264&qlt=100&fit=constrain",
+        backgroundImage1: "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/351994-Mobile-HeroSlim-BG-360x202?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=720&hei=404&qlt=100&fit=constrain",
         oneO: "AZURE. LIMITLESS INNOVATION.",
-        twoO: "Build what’s next",
-        threeO: "Get tools to take care of the busywork and streamline developer innovation with Azure. Pay as you go or try Azure free for up to 30 days. There’s no upfront commitment—cancel anytime.",
+        twoO: "It all comes down to trust",
+        threeO: "Build and deploy AI solutions confidently with privacy, safety, and security features from Azure. Pay as you go or try Azure free for up to 30 days. There’s no upfront commitment—cancel anytime.",
         
         actionButton: {
             four: "Get started with Azure",
         }
     },
+    sticker: {
+        news: [
+            {
+            title: "Featured news"
+            },
+            {
+            title: "Solutions"
+            },
+            {
+            title: "Products and services"
+            },
+            {
+            title: "Resources by role"
+            },
+            {
+            title: "Customer stories"
+            }
+        ],
+        stickynavbtn: "Get started with Azure",
+        mobileFeature: "Featured News"
+    },
+    main: {
+        backgroundImage: "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Desktop-feature-BG-4x-070924ACOMhp?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1600&hei=751&qlt=100&fmt=png-alpha&fit=constrain",
+        title: "FEATURED NEWS",
+        subhead: "Discover what's happening on Azure",
+        threes: [
+            {
+                image: "gh",
+                head: "Innovate with AI responsibly and securely",
+                text: "Secure your data and build AI apps confidently with responsible AI tools and the latest security and privacy features.",
+                button: 
+                {
+                    arrow: "gg",
+                    written: "Explore responsible AI"
+                }
+            },
+            {
+                image: "gh",
+                head: "Innovate with AI responsibly and securely",
+                text: "Create next-gen AI solutions with a responsible platform dedicated to security, reliability, and sustainability.",
+                button: 
+                {
+                    arrow: "gg",
+                    written: "Learn more"
+                }
+            },
+            {
+                image: "gh",
+                head: "Innovate with AI responsibly and securely",
+                text: "Join us November 18–22, 2024 to explore the latest innovations, learn from experts, level up your skillset, and expand your network.",
+                button: 
+                {
+                    arrow: "gg",
+                    written: "Register now"
+                }
+            }
+        ]
+    }
 }
 document.addEventListener('DOMContentLoaded', function(){
     function set(){
@@ -135,8 +219,13 @@ document.addEventListener('DOMContentLoaded', function(){
 
         const backgroundImage1 = document.getElementById("background-image1")
         backgroundImage1.src = azure.banner.backgroundImage1
+        
+        //explore
         const exp = document.getElementById("exp");
         exp.addEventListener('click', function() {
+            document.getElementById("exp").style.border = "1px dotted grey"
+            document.getElementById("exp").style.padding = "16px 19px 16px 11px"
+
             let dropdownMenu = document.querySelector('.dropdown-menu');
             if (!dropdownMenu) {
                 dropdownMenu = document.createElement('ul');
@@ -156,13 +245,20 @@ document.addEventListener('DOMContentLoaded', function(){
             const dropdownMenu = document.querySelector('.dropdown-menu');
             if (dropdownMenu && !exp.contains(event.target) && !dropdownMenu.contains(event.target)) {
                 dropdownMenu.style.display = 'none';
+                document.getElementById("exp").style.border = "none"
             }
         });
 
         
-
+        
         logoImg.addEventListener('click', function () {
             const url = 'https://www.microsoft.com/en-in/'
+            window.location.href = url
+        })
+        
+        const getazu = document.getElementById("four")
+        getazu.addEventListener('click', function(){
+            const url = 'https://azure.microsoft.com/en-in/pricing/purchase-options/azure-account/'
             window.location.href = url
         })
 
@@ -175,8 +271,57 @@ document.addEventListener('DOMContentLoaded', function(){
         const thi= document.getElementById("three")
         thi.innerHTML = azure.banner.threeO
 
-        const fou= document.getElementById("four")
-        fou.innerHTML = azure.banner.fourO
+        const fou= document.getElementById("nal")
+        fou.innerHTML = azure.banner.actionButton.four
+
+        const mobileHide = document.getElementById("mobile-hide")
+        azure.sticker.news.forEach(item => {
+            const stickyItem = document.createElement("li")
+            stickyItem.innerHTML = `<a>${item.title}</a>`
+        mobileHide.appendChild(stickyItem)
+        })
+        const stickynavBtn = document.getElementById("sticky-btn")
+        stickynavBtn.innerHTML = azure.sticker.stickynavbtn
+
+        const main = document.querySelector('.main')
+        main.innerHTML = `
+            <img src="" id="mainsub">
+            <div class="main-sub">
+                <div class="mainup">
+                    <div class="news"></div>
+                    <div class="disco"></div>
+                </div>
+                <div class="maindwn">
+                    <div class="cont-down"></div>
+                </div>
+            </div>  
+        `
+        const mainsub = document.getElementById('mainsub')
+        mainsub.src = azure.main.backgroundImage
+        const news = document.querySelector('.news')
+        news.innerHTML = azure.main.title
+        const discover = document.querySelector('.disco')
+        discover.innerHTML = azure.main.subhead
+        azure.main.threes.forEach(item => {
+            const one = document.createElement('div')
+            one.innerHTML = `
+                <div class="one-up">
+                    <img src="${item.image}" id="">
+                </div>
+                <div class="one-dwn">
+                    <div class="top">
+                        <div class="innov">${item.head}</div>
+                        <div class="tools">${item.text}</div>
+                    </div>
+                    <div class="bot">
+                        <a>
+                            <div class="arro">${item.arrow}</div>
+                            <div class="expl">${item.written}</div>
+                        </a>
+                    </div>
+                </div>
+            `
+        })
     }
     set()
 })
