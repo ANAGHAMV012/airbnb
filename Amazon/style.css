@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'reg';
+    src: url(fonts/pDxWAF1pBB0dzGB.woff2);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color: #131921;
+}
+.head1{
+    height: 60px;
+}
+.logo{
+    margin-left: 1px;
+    width: auto;
+    padding: 4px 0 0 0;
+    display: flex;
+    position: relative;
+    float: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.logo a{
+    display: flex;
+    position: static;
+    float: none;
+    flex-shrink: 0;
+    text-decoration: none;
+    padding: 1px 8px 0 6px;
+    margin: 1px;
+    height: 50px;
+    width: 100%;
+}
+.lim{
+    margin-top: 12px;
+    pointer-events: none;
+    float: left;
+    text-indent: -500px;
+    background-position: -10px -51px;
+    width: 97px;
+    height: 30px;
+    background-image: url('https://m.media-amazon.com/images/G/31/gno/sprites/nav-sprite-global-1x-reorg-privacy._CB600086755_.png');
+}
+.dotin{
+    color: #fff;
+    font-family: 'reg';
+    width: auto;
+    margin-top: 16px;
+    pointer-events: none;
+    display: block;
+    background-position: -270px -109px;
+    height: 14px;
+    float: left;
+    margin: 6px 0 0 1px;
+    font-size: 13.5px;
+    color: #fff;
+    line-height: 14px;
+    font-family: inherit;
+}
+.location{
+    width: auto;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    position: static;
+    float: none;
+    text-decoration: none;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 1em;
+}
+.loc{
+    display: flex;
+    position: static;
+    float: none;
+    width: fit-content;
+    font-size: 14px;
+    line-height: 1em;
+}
+.loc a{
+    padding: 0 9px 0 9px;
+    margin: 5px 2px 5px 0;
+    display: flex;
+    position: static;
+    float: none;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: fit-content;
+    height: auto;
+    box-shadow: none;
+    scroll-margin: 0;
+    overflow: hidden;
+    line-height: 39px;
+    color: #d6d6d6;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+.sprite{
+    background-position: -71px -378px;
+    width: 15px;
+    height: 18px;
+    margin-top: 8px;
+    display: flex;
+    position: static;
+    float: none;
+    background-image: url(	https://m.media-amazon.com/images/G/31/gno/sprites…-sprite-global-1x-reorg-privacy._CB600086755_.png);
+    background-repeat: repeat-x;
+    line-height: 39px;
+    color: #d6d6d6;
+    font-size: 14px;
+}
+.ingress{
+    margin-left: 3px;
+    display: flex;
+    position: static;
+    float: none;
+    flex-flow: column nowrap;
+    line-height: 39px;
+    color: #d6d6d6;
+    font-size: 14px;
+}
+.line1{
+    color: #ccc;
+    margin-top: 0;
+    padding-right: 0;
+}
