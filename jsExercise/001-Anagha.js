@@ -10,6 +10,12 @@ const getSumOfNumbers = (arr) => {
 console.log(getSumOfNumbers())
 
 
+
+
+
+
+
+
 // -----------------------------------------------
 // Oru array input aai eduth, avayile numbers nte maathram sum kandu pidikkuchu thirike tharunna oru function ezhuthuka.
 // Note: array il numbers maathram alla, string, or objects may also be present. Avayil, numbers nte maathram sum aanu kandu pidikkendeth.
@@ -25,6 +31,13 @@ const getSum = (arr) => {
 };
 console.log(getSum())
 
+
+
+
+
+
+
+
 // -----------------------------------------------
 // Largest value kandu pidikkuka. Oru array of numbers input aai eduth, athile largest number kandu pidich thirike tharunna function ezhuthuka.
 const getLargestNumber = (arr) => {
@@ -33,6 +46,13 @@ const getLargestNumber = (arr) => {
     return largest
 };
 console.log(getLargestNumber())
+
+
+
+
+
+
+
 
 // -----------------------------------------------
 // Oru string input aai eduth, athile vowels(a, e, i, o, u) nte enanm count cheithu thirike tharunna oru function ezhuthuka.
@@ -43,6 +63,13 @@ const countVowels = (str) => {
 };
 console.log(countVowels())
 
+
+
+
+
+
+
+
 // -----------------------------------------------
 // Oru array of numbers input aai eduth, athile duplicate items remove cheithu return cheyyunna oru function ezhuthuka.
 // Ex: console.log(removeDuplicates([1,1,2])) should print [1,2]
@@ -52,6 +79,12 @@ const removeDuplicates = (arr) => {
     return once
 };
 console.log(removeDuplicates())
+
+
+
+
+
+
 
 
 // -----------------------------------------------
@@ -65,14 +98,29 @@ const filterByAge = (arr, minAge) =>
     ];
 console.log(filterByAge(people, 28));
 
+
+
+
+
+
+
+
 // -----------------------------------------------
 // Write a function that takes a string as input. Validate if the string has a valid email format (contains "@" and "."). Return true if valid, false otherwise.
 const validateEmail = (email) => {
-    return email.includes('@') && email.includes('.');
+    const valid = /[a-z0-9._%+-]+@[a-z]+.[a-z]/;
+    return valid.test(email);
 };
-console.log(validateEmail('anaghamv@gmail.com'));
-console.log(validateEmail('invalid-email'));
-  
+console.log(validateEmail("anagha12@gmail.com"));
+console.log(validateEmail('.@'))
+
+
+
+
+
+
+
+
 // -----------------------------------------------
 // Write a function that takes an array of objects (each object has a property "name") as input. Return a new array containing the objects sorted alphabetically by name.
 // (Hint: Use array sorting methods)
@@ -86,9 +134,14 @@ const data = [
     { name: "Alice" },
     { name: "Bob" }
 ];
-
 // Call the function and log the result
 console.log(sortByName(data));
+
+
+
+
+
+
 
 
 // -----------------------------------------------
@@ -101,6 +154,13 @@ const mergeSortedArrays = (arr1, arr2) => {
     return merged
 };
 console.log(mergeSortedArrays())
+
+
+
+
+
+
+
 
 // -----------------------------------------------
 // Write a function that takes an array of objects (each object represents a product with properties "price" and "quantity") as input. Return the total price of all products (price * quantity).
@@ -117,6 +177,13 @@ const calculateProductPrice = (price, quantity) => {
     return totalprice
 };
 console.log(calculateProductPrice())
+
+
+
+
+
+
+
 
 // -----------------------------------------------
 // Write a function that takes an array of objects (of any type) as input. Return a new object where keys are unique values of the "property" and values are arrays of objects belonging to that property.
@@ -200,6 +267,14 @@ const characters = [
 const groupedResult = groupByProperty(characters, 'family');
 console.log(groupedResult);
 
+
+
+
+
+
+
+
+
 // -----------------------------------------------
 // Write a function to aggregate order data for reporting:
 // You have a JSON array representing customer orders. Each order object has properties like "customerId" "items" (array of product objects), and "totalPrice."
@@ -209,29 +284,35 @@ console.log(groupedResult);
 // - Total number of orders placed by the customer (field name: totalOrders)
 // - Total amount spent by the customer (across all orders) (field name: totalAmount)
 // - Most frequently purchased product (by quantity) and its total quantity (field name : mostFrequentProduct)
-const aggregateOrders = (arr, customerId) => {
-    const customerOrders = arr.filter(order => order.customerId === customerId);
+const orders = [
+    { customerId: "1", items: [{ product: "Apple", quantity: 3 }, { product: "Ball", quantity: 5 }], totalPrice: 60 },
+    { customerId: "1", items: [{ product: "Apple", quantity: 3 }], totalPrice: 20 },
+    { customerId: "2", items: [{ product: "Apple", quantity: 2 }], totalPrice: 20 },
+    { customerId: "3", items: [{ product: "Ball", quantity: 4 }], totalPrice: 40 }
+];
 
+const orderfunction = (arr, customerId) => {
+    const customerOrders = arr.filter(order => order.customerId === customerId);
     const totalOrders = customerOrders.length;
     const totalAmount = customerOrders.reduce((sum, order) => sum + order.totalPrice, 0);
-
     const productFrequency = {};
 
     customerOrders.forEach(order => {
-        order.items.forEach(({ productId, quantity }) => {
-            if (!productFrequency[productId]) {
-                productFrequency[productId] = 0;
+        order.items.forEach(({ product, quantity }) => {
+            
+            if (!productFrequency[product]) {
+                productFrequency[product] = 0;
             }
-            productFrequency[productId] += quantity;
+            productFrequency[product] += quantity;
         });
     });
 
     let mostFrequentProduct = null;
     let maxQuantity = 0;
 
-    for (const [productId, quantity] of Object.entries(productFrequency)) {
+    for (const [product, quantity] of Object.entries(productFrequency)) {
         if (quantity > maxQuantity) {
-            mostFrequentProduct = productId;
+            mostFrequentProduct = product;
             maxQuantity = quantity;
         }
     }
@@ -240,6 +321,8 @@ const aggregateOrders = (arr, customerId) => {
         customerId,
         totalOrders,
         totalAmount,
-        mostFrequentProduct: { productId: mostFrequentProduct, quantity: maxQuantity }
+        mostFrequentProduct: { product: mostFrequentProduct, quantity: maxQuantity }
     };
 };
+
+console.log(orderfunction(orders, "1"));

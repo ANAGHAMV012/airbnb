@@ -1,4 +1,3 @@
-
 /*
 Problem: Retry Operation with Callback on Success
 Write a function retryOperation that takes three arguments:
@@ -43,23 +42,22 @@ async function retryOperation(operation, retries, callback) {
         console.log(`Attempt ${attempt + 1} failed. Retrying...`);
       }
     }
+}
+  
+async function fetchData() {
+  if (Math.random() < 0.7) throw new Error("Network error");
+  return "Data received";
+}
+
+function onSuccess(data) {
+  console.log("Operation successful:", data);
+}
+
+(async () => {
+  try {
+    await retryOperation(fetchData, 3, onSuccess);
+    console.log("Completed");
+  } catch {
+    console.log("All retries failed");
   }
-  
-  async function fetchData() {
-    if (Math.random() < 0.7) throw new Error("Network error");
-    return "Data received";
-  }
-  
-  function onSuccess(data) {
-    console.log("Operation successful:", data);
-  }
-  
-  (async () => {
-    try {
-      await retryOperation(fetchData, 3, onSuccess);
-      console.log("Completed");
-    } catch {
-      console.log("All retries failed");
-    }
-  })();
-  
+})();
