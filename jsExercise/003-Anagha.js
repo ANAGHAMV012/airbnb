@@ -11,7 +11,8 @@ The retryOperation function should attempt to execute the operation function. If
 If all attempts fail, retryOperation should return a final rejection.
 ​
 Example usage:
-​
+​retries: A number specifying how many times to retry the operation if it fails.
+
 async function fetchData() {
   // Simulated operation that might fail
   if (Math.random() < 0.7) throw new Error("Network error");
@@ -43,7 +44,7 @@ async function retryOperation(operation, retries, callback) {
       }
     }
 }
-  
+
 async function fetchData() {
   if (Math.random() < 0.7) throw new Error("Network error");
   return "Data received";

@@ -130,3 +130,16 @@
 //         .filter((arrItem => arrItem === item).length === 1
 //         );
 // console.log(getNonRepeatedChars('abacddbec'))
+
+
+
+
+const p = 
+
+
+
+async function getData(){
+    return "Namaste"
+}
+console.log(getData())
+getData().then((res) => console.log(res))
