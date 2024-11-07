@@ -85,18 +85,68 @@
 // let age: number = 30;
 // age='a';
 
-type User = {
-    readonly_id: string
-    name: string
-    email: string
-    isActive: boolean
-}
-function createUser(u: User){}
+// type User = {
+//     readonly_id: string
+//     name: string
+//     email: string
+//     isActive: boolean
+// }
+// function createUser(u: User){}
 
-let myUser: User = {
-    _id: "1245",
-    name: "h",
-    email: "h@h.com",
-    isActive: false
+// let myUser: User = {
+//     id: "1245",
+//     name: "h",
+//     email: "h@h.com",
+//     isActive: false
+// }
+// myUser.email="h@h.com"
+
+let age: number=30;
+if (age<50)
+    age += 10;
+console.log(age)
+
+
+let sales = 123_456_789
+let course: string = 'Typescript'
+let is_published: boolean = true
+let level;
+function render(document){
+    console.log(document)
 }
-myUser.email="h@h.com"
+
+function calculateTax(income: number){
+    if(income<50_000)
+        return income * 1.2;
+}
+
+
+function calculateTax(income: number): number{
+    let x;
+    if(income<50_000)
+        return income * 1.2
+    return income * 1.3
+}
+let employee: {
+    readonly id: number,
+    name: string,
+    retire: (date: Date) => void
+} = {
+    id: 1
+    name: 'Mosh',
+    retire: (date: Date) => {
+        console.log(date)
+    }
+}
+
+let employee: {
+    readonly id: number,
+    name: string,
+    retire: (date: Date) => void
+} = {
+    id: 1,
+    name: 'Mosh',
+    retire: (date: Date) => {
+        console.log(date);
+    }
+}
